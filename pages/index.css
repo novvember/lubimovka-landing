@@ -1,3 +1,9 @@
-@import url(../vendor/normalize.css);
+@import url("../vendor/normalize.css");
 
-@import url(../blocks/header.css); /* Пример импорта стилей блока */
+@import url("../vendor/fonts/fonts.css");
+
+@import url("../blocks/page/page.css");
+
+@import url("../blocks/content/content.css");
+
+@import url("../blocks/header/header.css"); /* Пример импорта стилей блока */
