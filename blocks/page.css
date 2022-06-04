@@ -1,7 +1,8 @@
 .page {
-  background-color: #ecebeb;
+  background-color: #ecebe8;
   padding: 0;
   margin: 0;
+  font-family: "Formular", sans-serif;
     /* Сглаживание шрифтов */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
