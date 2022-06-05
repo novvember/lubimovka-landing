@@ -14,50 +14,64 @@
 
 
 .header__menu {
+  /* Скрытие меню */
   max-height: 0px;
   overflow: hidden;
   transition: max-height .3s;
+  /* Позиционирование поверх контента */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  /* Фон */
   background-color: #ecebe8;
-  background-image: url(../images/logo.svg);
-  background-repeat: no-repeat;
-  background-size: 43px 34px;
-  background-position: 58px 48px;
-  padding-inline: 58px;
+  /* Расположение элементов внутри */
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
 
 .header__menu_opened {
+  /* Открытие меню */
   max-height: 100vh;
   overflow-y: scroll;
 }
 
 
 .header__sections-list {
+  /* Сброс стилей */
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 125px;
+  /* Поля */
+  padding-inline: 54px;
+  margin-top: 46px;
+  /* Расположение элементов */
   display: flex;
   flex-direction: column;
   gap: 25px;
+  /* Логотип сверху */
+  padding-top: 77px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 43px 34px;
+  background-position: left 54px top;
 }
 
 .header__sections-item {
+
+}
+
+.header__section-link {
+  position: relative;
+  text-decoration: none;
   font-family: 'Machina';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: -0.01em;
-}
-
-.header__section-link {
-  color: inherit;
-  text-decoration: none;
-  position: relative;
+  color: #242424;
 }
 
 .header__section-link::before,
@@ -89,6 +103,63 @@
 .header__section-link_active::after{
   visibility: visible;
 }
+
+
+.header__actions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.header__action-item {
+  outline: 1px solid #000;
+  text-transform: uppercase;
+}
+
+
+.header__extra-link {
+  display: block;
+  padding: 16px 54px 18px 16px;
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #242424;
+  text-decoration: none;
+  background-image: url(../images/icon__arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right 15px center;
+  transition: color .3s, background-color .3s;
+}
+
+.header__extra-link:hover {
+  color: #fff;
+  background-color: #242424;
+  background-image: url(../images/icon__arrow-right_white.svg);
+}
+
+
+
+.header__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.header__social-item {
+  width: calc(50% - .5px);
+  outline: 1px solid #000;
+}
+
 
 
 
