@@ -13,16 +13,90 @@
 }
 
 
-
-
-.header__links {
-  display: none;
+.header__menu {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ecebe8;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 43px 34px;
+  background-position: 58px 48px;
+  padding-inline: 58px;
 }
 
-.header__links_opened {
-  display: block;
+.header__menu_opened {
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
+
+.header__sections-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header__sections-item {
+  font-family: 'Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+}
+
+.header__section-link {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+.header__section-link::before,
+.header__section-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 1.46em;
+  width: .57em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  visibility: hidden;
+}
+
+.header__section-link::before {
+  left: -.57em;
+  background-image: url(../images/icon__menu-zctive-before.svg);
+}
+
+.header__section-link::after {
+  right: -.57em;
+  background-image: url(../images/icon__menu-zctive-after.svg);
+}
+
+.header__section-link:hover::before,
+.header__section-link:hover::after,
+.header__section-link_active::before,
+.header__section-link_active::after{
+  visibility: visible;
+}
+
+
+
+
+
+
+
+/* Кнопка-бургер для открытия меню */
 .header__menu-button {
   position: fixed;
   bottom: 128px;
