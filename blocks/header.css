@@ -1,0 +1,51 @@
+.header {
+  padding: 32px 24px;
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  width: 43px;
+  height: 34px;
+  object-fit: contain;
+}
+
+
+
+
+.header__links {
+  display: none;
+}
+
+.header__links_opened {
+  display: block;
+}
+
+.header__menu-button {
+  position: fixed;
+  bottom: 128px;
+  right: 0;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-color: #242424;
+  border: 0;
+  cursor: pointer;
+  background-image: url(../images/icon__menu-open.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 12px;
+}
+
+.header__menu-button_type_close {
+  background-image: url(../images/icon__menu-close.svg);
+  background-size: 18px 18px;
+}
+
+@media (min-width: 768px) {
+  .header__menu-button {
+    display: none;
+  }
+}
