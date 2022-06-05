@@ -5,6 +5,29 @@
   align-items: center;
 }
 
+@media (min-width: 1260px) {
+  .header {
+    padding: 11px 0 30px;
+    flex-direction: column;
+    gap: 33px;
+    align-items: flex-start;
+  }
+}
+
+
+/* Перваая строка шапки, со всем меню */
+@media (min-width: 1260px) {
+  .header__navbar {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 30px;
+    border-bottom: 1px solid #242424;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* Логотип */
 .header__logo {
   display: block;
   width: 43px;
@@ -12,7 +35,15 @@
   object-fit: contain;
 }
 
+@media (min-width: 1260px) {
+  .header__logo {
+    padding-top: 4px;
+    padding-bottom: 11px;
+  }
+}
 
+
+/* Меню со всеми ссылками шапки */
 .header__menu {
   /* Скрытие меню */
   max-height: 0px;
@@ -37,7 +68,18 @@
   overflow-y: scroll;
 }
 
+@media (min-width: 1260px) {
+  .header__menu {
+    max-height: none;
+    position: relative;
+    flex-direction: row;
+    gap: 0;
+    overflow: visible;
+  }
+}
 
+
+/* Список ссылок на другие разделы сайта */
 .header__sections-list {
   /* Сброс стилей */
   list-style: none;
@@ -58,8 +100,28 @@
   background-position: left 54px top;
 }
 
-.header__sections-item {
+@media (min-width: 1260px) {
+  .header__sections-list {
+    flex-direction: row;
+    background-image: none;
+    padding: 0;
+    padding-inline: 20px;
+    margin: 0;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+}
 
+@media (min-width: 1260px) {
+  .header__sections-item_type_home-page {
+    display: none;
+  }
+}
+@media (min-width: 1260px) {
+  .header__sections-item {
+    padding: 8px 0 8px;
+  }
 }
 
 .header__section-link {
@@ -72,6 +134,15 @@
   line-height: 1.14;
   letter-spacing: -0.01em;
   color: #242424;
+}
+
+@media (min-width: 1260px) {
+  .header__section-link {
+    font-family: 'Formular';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.38;
+  }
 }
 
 .header__section-link::before,
@@ -105,6 +176,7 @@
 }
 
 
+/* Список ссылок на дополнительные действия, типа пожертвований */
 .header__actions-list {
   list-style: none;
   padding: 0;
@@ -115,12 +187,29 @@
   gap: 1px;
 }
 
+@media (min-width: 1260px) {
+  .header__actions-list {
+    order: 4;
+    padding: 0;
+    padding-inline: 20px;
+    gap: 0;
+    border-left: 1px solid #242424;
+  }
+}
+
 .header__action-item {
   outline: 1px solid #000;
   text-transform: uppercase;
 }
 
+@media (min-width: 1260px) {
+  .header__action-item {
+    outline: none;
+  }
+}
 
+
+/* Общий элемент для ссылок-кнопок в шапке */
 .header__extra-link {
   display: block;
   padding: 16px 54px 18px 16px;
@@ -138,14 +227,41 @@
   transition: color .3s, background-color .3s;
 }
 
+@media (min-width: 1260px) {
+  .header__extra-link {
+    padding: 8px;
+    background-image: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  .header__actions-list .header__extra-link {
+    padding-left: 25px;
+    background-image: url(../images/icon__plus.svg);
+    background-position: left;
+  }
+}
+
 .header__extra-link:hover {
   color: #fff;
   background-color: #242424;
   background-image: url(../images/icon__arrow-right_white.svg);
 }
 
+@media (min-width: 1260px) {
+  .header__extra-link:hover {
+    background-image: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  .header__actions-list .header__extra-link:hover {
+    background-image: url(../images/icon__plus_white.svg);
+  }
+}
 
 
+/* Список ссылок на социальные сети */
 .header__social-list {
   list-style: none;
   padding: 0;
@@ -155,16 +271,26 @@
   gap: 1px;
 }
 
+@media (min-width: 1260px) {
+  .header__social-list {
+    padding-inline: 16px;
+    gap: 0;
+    flex-wrap: nowrap;
+    border-left: 1px solid #242424;
+  }
+}
+
 .header__social-item {
   width: calc(50% - .5px);
   outline: 1px solid #000;
 }
 
-
-
-
-
-
+@media (min-width: 1260px) {
+  .header__social-item {
+    width: fit-content;
+    outline: none;
+  }
+}
 
 
 /* Кнопка-бургер для открытия меню */
@@ -189,7 +315,7 @@
   background-size: 18px 18px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1260px) {
   .header__menu-button {
     display: none;
   }
