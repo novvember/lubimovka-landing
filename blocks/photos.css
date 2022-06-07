@@ -42,13 +42,14 @@
 
   .photos__container {
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
       gap: 1px 1px;
   }
 }
 
 @media screen and (min-width: 1100px) {
     .photos {
-      margin: 144px 0 150px;
+      margin: 145px 0;
     }
   
     .photos__title {
