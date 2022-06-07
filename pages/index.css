@@ -10,3 +10,4 @@
 @import url("../blocks/header.css"); /* Пример импорта стилей блока */
 
 @import url(../blocks/play.css);
+@import url(../blocks/title.css);
