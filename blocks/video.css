@@ -1,0 +1,5 @@
+.video {
+  background-image: url(../images/video-thumb.png);
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+}
