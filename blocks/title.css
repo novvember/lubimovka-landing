@@ -40,7 +40,7 @@
 
 @media (min-width: 768px) {
   .title__title {
-    font-size: 72px;
+    font-size: min(72px, 5vw);
     line-height: .97;
     margin-bottom: 37px;
   }
