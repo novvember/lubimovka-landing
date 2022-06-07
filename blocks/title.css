@@ -39,6 +39,11 @@
 }
 
 @media (min-width: 768px) {
+  .title {
+    --extra-side-margin: 24px;
+  }
+
+
   .title__title {
     font-size: min(72px, 5vw);
     line-height: .97;
@@ -46,7 +51,7 @@
   }
 
   .title__subtitle {
-    margin-left: 60px;
+    margin-left: var(--extra-side-margin);
     margin-bottom: 212px;
   }
 
@@ -56,5 +61,11 @@
 
   .title__tickets-button {
     margin-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    --extra-side-margin: 60px;
   }
 }

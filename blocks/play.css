@@ -1,7 +1,6 @@
 .play {
   padding-top: 54px;
   padding-bottom: 50px;
-
 }
 
 .play__title {
@@ -35,6 +34,8 @@
 
 @media (min-width: 768px) {
   .play {
+    --side-margin: 24px;
+    --extra-side-margin: 48px;
     padding-top: 30px;
     margin-bottom: 72px;
     display: grid;
@@ -49,7 +50,7 @@
 
   .play__title {
     grid-area: title;
-    margin: 62px 60px 57px 120px;
+    margin: 62px 60px 57px var(--side-margin);
   }
 
   .play__play-photo {
@@ -59,12 +60,12 @@
 
   .play__play-summary {
     grid-area: play-summary;
-    margin: 48px 120px 68px 0;
+    margin: 48px var(--side-margin) 68px 0;
   }
 
   .play__credits {
     grid-area: credits;
-    margin: 0 60px 0 184px;
+    margin: 0 60px 0 var(--extra-side-margin);
   }
 
   .play__video {
@@ -74,11 +75,25 @@
 
   .play__description {
     grid-area: description;
-    margin: 0 120px 80px 0;
+    margin: 0 var(--side-margin) 80px 0;
   }
 
   .play__card {
     grid-area: card;
-    margin: 0 120px 0 0;
+    margin: 0 var(--side-margin) 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .play {
+    --side-margin: 60px;
+    --extra-side-margin: 120px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .play {
+    --side-margin: 120px;
+    --extra-side-margin: 180px;
   }
 }
