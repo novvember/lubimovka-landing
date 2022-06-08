@@ -5,11 +5,10 @@
 }
 
 .critics__head {
-  margin: 0 calc((100% - min(541px, calc(87.4vw)))/2) 24px;
+  margin: 0 26px 24px;
   padding: 0;
   display: flex;
   justify-content: space-between;
-  background-color: #ecebe8;
   align-content: center;
   position: relative;
 }
@@ -33,25 +32,26 @@
 
 .critics__slider {
   border: 0;
-  border-radius: 25px;
+  border-radius: 50%;
   background-color: transparent;
   display: block;
-  background-size: 50px 50px;
+  background-size: contain;
   width: 50px;
   height: 50px;
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
+  background-position: center;
   transition: background-color 0.3s ease;
 }
 
 .critics__slider_left {
-  background: url(../images/slider-arrow.svg);
+  background-image: url(../images/slider-arrow.svg);
   margin-right: 20px;
 }
 
 .critics__slider_right {
-  background: url(../images/slider-arrow-right.svg);
+  background-image: url(../images/slider-arrow-right.svg);
 }
 
 .critics__slider_active:hover {
@@ -74,7 +74,7 @@
 
 .critics__indicator-item {
   background: url(../images/Ellipse\ 37.svg) no-repeat;
-  background-size: 6px 6px;
+  background-size: contain;
   width: 6px;
   height: 6px;
   transition: background-color 0.3s ease;
@@ -82,25 +82,25 @@
 
 .critics__indicator-item_active {
   background: url(../images/Ellipse\ 36.svg) no-repeat;
-  background-size: 6px 6px;
+  background-size: contain;
 }
 
 .critics__indicator-item:hover {
   background-color: #000;
-  border-radius: 3px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
 .critics__articles-list {
   margin: 0;
   padding: 0;
-  /* width: 100vw; */
   display: flex;
   justify-content: start;
+  list-style: none;
 }
 
 .critics__article {
-  width: min(718px, 100vw);
+  width: 100vw;
   margin: 0;
   padding: 77px 0 72px 0;
   background-color: #fff;
@@ -109,24 +109,25 @@
 
 .critics__article_inactive {
   opacity: 0.5;
+  display: none;
 }
 
 .critics__subtitle {
   display: block;
   width: 241.51px;
-  margin: 0 0 0 calc((100% - min(541px, calc(87.4vw)))/2);
+  margin: 0 0 0 26px;
   padding: 0;
 }
 
 .critics__text {
-  margin: 35px calc((100vw - min(541px, calc(87.4vw)))/2) 32px;
+  margin: 35px 26px 32px;
   font-family: 'Formular', sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 300;
   letter-spacing: -0.01em;
   color: #242424;
-  width: min(541px, calc(87.4vw));
+  width: calc(100vw - 52px);
 }
 
 .critics__fullread {
@@ -138,7 +139,7 @@
   background-position: left center;
   border-top: none;
   border-right: none;
-  margin: 0 0 0 calc((100% - min(541px, calc(87.4vw)))/2);;
+  margin: 0 0 0 26px;
   padding: 8px 5px 9px 28px;
   font-family: 'Formular', sans-serif;
   font-size: 16px;
@@ -171,6 +172,10 @@
     margin: 0 0 0 30px;
   }
 
+  .critics__article_inactive {
+    display: block;
+  }
+
   .critics__title {
     font-size: 32px;
     line-height: 36px;
@@ -183,8 +188,17 @@
     left: 494px;
   }
 
+  .critics__subtitle {
+    margin-left: 50px;
+  }
+
   .critics__text {
-    margin: 35px min(88px, calc((100vw - 718px)/2)) 32px;
+    width: 541px;
+    margin: 35px calc((718px - 541px)/2) 32px;
+  }
+
+  .critics__fullread {
+    margin-left: 50px;
   }
 }
 
@@ -197,5 +211,17 @@
 
   .critics__articles-list {
     padding: 0 0 0 min(23vw, 332px);
+  }
+
+  .critics__subtitle {
+    margin-left: 88px;
+  }
+
+  .critics__text {
+    margin-left: 88px;
+  }
+
+  .critics__fullread {
+    margin-left: 88px;
   }
 }
