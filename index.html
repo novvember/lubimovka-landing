@@ -70,7 +70,23 @@
         </div>
 
         <div class="video play__video">
-          video
+          <img
+            class="video__thumb"
+            src="./images/video-thumb.png"
+            alt="Видео спектакля"
+            data-videolink="https://www.youtube.com/embed/qUkeNlgz36Y">
+          <button class="video__playback-button" aria-label="Воспроизвести видео"></button>
+          <template class="video__iframe-template">
+            <iframe
+              class="video__iframe"
+              width="560"
+              height="315"
+              src="#"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </template>
         </div>
 
         <div class="description play__description">
