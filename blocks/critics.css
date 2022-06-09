@@ -1,0 +1,220 @@
+.critics {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.critics__head {
+  margin: 0 26px 24px 24px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+}
+
+.critics__slider-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+}
+
+.critics__title {
+  font-family: "Machina", sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #242424;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.critics__slider {
+  border: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  display: block;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.3s ease;
+}
+
+.critics__slider_left {
+  background-image: url(../images/slider-arrow.svg);
+  margin-right: 20px;
+}
+
+.critics__slider_right {
+  background-image: url(../images/slider-arrow-right.svg);
+}
+
+.critics__slider_active:hover {
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+}
+
+.critics__indicator {
+  position: absolute;
+  top: 106px;
+  left: 5px;
+  list-style: none;
+  display: flex;
+  width: 74px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.critics__indicator-item {
+  background: url(../images/Ellipse\ 37.svg) no-repeat;
+  background-size: contain;
+  width: 6px;
+  height: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.critics__indicator-item_active {
+  background: url(../images/Ellipse\ 36.svg) no-repeat;
+  background-size: contain;
+}
+
+.critics__indicator-item:hover {
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.critics__articles-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  list-style: none;
+}
+
+.critics__article {
+  width: 100vw;
+  margin: 0;
+  padding: 77px 0 72px 0;
+  background-color: #fff;
+  height: min-content;
+}
+
+.critics__article_inactive {
+  opacity: 0.5;
+  display: none;
+}
+
+.critics__subtitle {
+  display: block;
+  width: 241.51px;
+  margin: 0 0 0 26px;
+  padding: 0;
+}
+
+.critics__text {
+  margin: 35px 26px 32px;
+  font-family: 'Formular', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: #242424;
+  width: calc(100vw - 52px);
+}
+
+.critics__fullread {
+  width: 210px;
+  height: 32px;
+  background-color: transparent;
+  background: url(../images/arrow-45.svg) no-repeat;
+  background-size: 25px 25px;
+  background-position: left center;
+  border-top: none;
+  border-right: none;
+  margin: 0 0 0 26px;
+  padding: 8px 5px 9px 28px;
+  font-family: 'Formular', sans-serif;
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: 300;
+  color: #242424;
+  text-align: start;
+  transition: background-color 0.7s linear;
+}
+
+.critics__fullread:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.critics__fullread_inactive:hover {
+  background-color: transparent;
+  color: #242424;
+  cursor: default;
+}
+
+@media screen and (min-width: 760px) {
+  .critics__head {
+    margin: 0 26px 30px 180px;
+    width: 568px;
+  }
+
+  .critics__article {
+    margin: 0 0 0 30px;
+  }
+
+  .critics__article_inactive {
+    display: block;
+  }
+
+  .critics__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 31px;
+  }
+
+  .critics__indicator {
+    position: absolute;
+    top: 16px;
+    left: 294px;
+  }
+
+  .critics__subtitle {
+    margin-left: calc((718px - 541px)/2);
+  }
+
+  .critics__text {
+    width: 541px;
+    margin: 35px calc((718px - 541px)/2) 32px;
+  }
+
+  .critics__fullread {
+    margin-left: calc((718px - 541px)/2);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .critics__head {
+    margin: 0 0 35px 362px;
+    width: 718px;
+  }
+  
+  .critics__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .critics__articles-list {
+    padding: 0 0 0 332px;
+  }
+}
