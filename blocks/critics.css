@@ -5,7 +5,7 @@
 }
 
 .critics__head {
-  margin: 0 26px 24px;
+  margin: 0 26px 24px 24px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -162,10 +162,10 @@
   cursor: default;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 760px) {
   .critics__head {
-    margin: 0 auto;
-    width: 718px;
+    margin: 0 26px 30px 180px;
+    width: 568px;
   }
 
   .critics__article {
@@ -185,11 +185,11 @@
   .critics__indicator {
     position: absolute;
     top: 16px;
-    left: 494px;
+    left: 294px;
   }
 
   .critics__subtitle {
-    margin-left: 50px;
+    margin-left: calc((718px - 541px)/2);
   }
 
   .critics__text {
@@ -198,11 +198,16 @@
   }
 
   .critics__fullread {
-    margin-left: 50px;
+    margin-left: calc((718px - 541px)/2);
   }
 }
 
 @media screen and (min-width: 1100px) {
+  .critics__head {
+    margin: 0 0 35px 362px;
+    width: 718px;
+  }
+  
   .critics__title {
     font-size: 40px;
     line-height: 40px;
@@ -210,18 +215,6 @@
   }
 
   .critics__articles-list {
-    padding: 0 0 0 min(23vw, 332px);
-  }
-
-  .critics__subtitle {
-    margin-left: 88px;
-  }
-
-  .critics__text {
-    margin-left: 88px;
-  }
-
-  .critics__fullread {
-    margin-left: 88px;
+    padding: 0 0 0 332px;
   }
 }
