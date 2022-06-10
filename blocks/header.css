@@ -3,29 +3,26 @@
   display: flex;
   gap: 19px;
   align-items: center;
+  background-color: #ecebe8;
 }
 
 @media (min-width: 1260px) {
   .header {
-    padding: 11px 0 30px;
-    flex-direction: column;
-    gap: 33px;
-    align-items: flex-start;
-  }
-}
-
-
-/* Перваая строка шапки, со всем меню */
-@media (min-width: 1260px) {
-  .header__navbar {
-    box-sizing: border-box;
-    width: 100%;
+    padding: 0;
+    padding-top: 11px;
     padding-left: 30px;
+    margin-bottom: 65px;
+
+    align-items: stretch;
+    gap: 33px;
+
+    position: sticky;
+    top: 0;
+
     border-bottom: 1px solid #242424;
-    display: flex;
-    gap: 20px;
   }
 }
+
 
 /* Логотип */
 .header__logo {
@@ -291,6 +288,17 @@
     outline: none;
   }
 }
+
+
+@media (min-width: 1260px) {
+  .header__return-button {
+    position: absolute;
+    bottom: -65px;
+    left: 30px;
+  }
+}
+
+
 
 
 /* Кнопка-бургер для открытия меню */
