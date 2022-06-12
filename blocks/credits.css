@@ -49,13 +49,13 @@
 }
 
 .credits__troupe-role {
-  display: block;
+  margin: 0;
   font-size: 16px;
   letter-spacing: 0;
 }
 
 .credits__troupe-name {
-  display: block;
+  margin: 0;
   margin-left: 30px;
 }
 
