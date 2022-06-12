@@ -14,10 +14,12 @@
     margin-bottom: 65px;
 
     align-items: stretch;
-    gap: 33px;
+    justify-content: space-between;
+    gap: 19px;
 
     position: sticky;
     top: 0;
+    z-index: 2;
 
     border-bottom: 1px solid #242424;
   }
@@ -288,17 +290,6 @@
     outline: none;
   }
 }
-
-
-@media (min-width: 1260px) {
-  .header__return-button {
-    position: absolute;
-    bottom: -65px;
-    left: 30px;
-  }
-}
-
-
 
 
 /* Кнопка-бургер для открытия меню */

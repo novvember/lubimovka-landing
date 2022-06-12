@@ -1,0 +1,12 @@
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 86px;
+}
+
+@media (min-width: 1260px) {
+  .back-button {
+    top: 94px;
+    left: 30px;
+  }
+}
