@@ -1,0 +1,54 @@
+.share {
+  padding: 25px;
+}
+
+@media (min-width: 768px) {
+  .share {
+    padding-top: 57px;
+    padding-bottom: 57px;
+    padding-inline: 0;
+  }
+}
+
+.share__title {
+  margin: 0;
+  font-family: 'Machina', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+@media (min-width: 768px) {
+  .share__title {
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .share__title {
+    margin: 0 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .share__title {
+    margin: 0 362px;
+  }
+}
+
+.share__buttons {
+  vertical-align: 60%;
+  display: inline-flex;
+  gap: 8px;
+}
+
+/* Временно, пока не будет готов отдельный блок для кнопок */
+.share__buttons button {
+  height: 16px;
+  font-size: 16px;
+  padding: 0;
+  line-height: 1;
+}
