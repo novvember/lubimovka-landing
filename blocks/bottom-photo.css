@@ -1,0 +1,14 @@
+.bottom-photo {
+  background-image: url(../images/bottom-mobile.png);
+  background-size: cover;
+  background-position: center 0;
+  width: 100%;
+  height: 252px;
+}
+
+@media screen and (min-width: 600px) {
+  .bottom-photo {
+    background-image: url(../images/Bottom-photo.png);
+    height: 404px;
+  }
+}
