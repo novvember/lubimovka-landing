@@ -1,79 +1,94 @@
+/* Общий блок кнопки -- дает анимацию фона и нажатие */
 .button {
-
-
-  cursor: pointer;
-
-  font-family: 'Formular', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: .88;
-  color: #242424;
-
-  text-transform: uppercase;
-
+  /* Перменные блока */
   --icon-size: 20px;
-
-  padding: 9px 10px;
-  padding-right: calc(var(--icon-size) + 9px);
-
-
+  --border: 1px solid #242424;
+  --duration: .3s;
+  --bg-color: #242424;
+  --scale: 1.15;
+  /* Сброс параметров */
+  cursor: pointer;
   position: relative;
-
   background-color: transparent;
-
-  border: 1px solid #242424;
-  border-top: none;
-  border-left: none;
-
-
-  transition: color .3s;
-
-
+  border: none;
+  transition: color var(--duration);
 }
 
+/* Фон */
 .button::before {
-
   content: '';
-
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-
   height: 100%;
   width: 0;
-
-  background-color: #242424;
-
-  transition: width .3s, transform .3s;
-
+  background-color: var(--bg-color);
+  transition: width var(--duration), transform var(--duration);
   z-index: -1;
-}
-
-.button::after {
-  content: '';
-
-  width: var(--icon-size);
-  height: 100%;
-
-  position: absolute;
-  top: 50%;
-  right: 0;;
-
-  transform: translateY(-50%);
-
-  background-image: url(../images/icon__arrow-right.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .button:hover::before {
   width: 100%;
 }
 
+/* Типы кнопок по брендбуку */
+.button_size_small {
+  /* Text */
+  font-family: 'Formular', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: .88;
+  color: #242424;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* Поля */
+  padding: 9px 10px;
+}
+
+/* Расположение иконки, если есть */
+.button_icon-align_right {
+  padding-right: calc(var(--icon-size) + 9px);
+}
+
+/* Положение границ кнопки */
+.button_borders_br {
+  border-bottom: var(--border);
+  border-right: var(--border);
+}
+
+/* Иконка */
+.button_icon-align_right::after {
+  content: '';
+  width: var(--icon-size);
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0;;
+  transform: translateY(-50%);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image var(--duration);
+}
+
+/* Выбор иконки */
+.button_icon_arrow-left::after {
+  background-image: url(../images/icon__arrow-left.svg);
+}
+
+.button_icon_arrow-left:hover::after {
+  background-image: url(../images/icon__arrow-left_white.svg);
+}
+
+
+
+
+
+
 .button:active::before {
-  transform: translateY(-50%) scale(1.1);
+  transform: translateY(-50%) scale(var(--scale));
 }
 
 
@@ -84,9 +99,14 @@
 
 
 
-.button_type_small {
 
-}
+
+
+
+
+
+
+
 
 .button_type_big {
 
