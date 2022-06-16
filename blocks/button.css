@@ -79,6 +79,8 @@
   padding: 19px;
 
   min-width: 240px;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .button_big-icon_right {
@@ -92,6 +94,10 @@
 .button_borders_br {
   border-bottom: var(--border);
   border-right: var(--border);
+}
+
+.button_borders_t {
+  border-top: var(--border);
 }
 
 .button_borders_full {
@@ -148,6 +154,24 @@
 .button_icon_arrow-right:hover::after {
   background-image: url(../images/icon__arrow-right_white.svg);
 }
+
+.button_icon_arrow-diagonal::after {
+  background-image: url(../images/icon_arrow-diagonal.svg);
+}
+
+.button_icon_arrow-diagonal:hover::after {
+  background-image: url(../images/icon_arrow-diagonal_white.svg);
+}
+
+.button_icon_arrow-down::after {
+  background-image: url(../images/icon__arrow-down.svg);
+}
+
+.button_icon_arrow-down:hover::after {
+  background-image: url(../images/icon__arrow-down_white.svg);
+}
+
+
 
 
 
