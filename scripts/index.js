@@ -1,3 +1,5 @@
+import './video.js'
+
 const burgerMenuButton = document.querySelector('.header__menu-button');
 const menu = document.querySelector('.header__menu');
 
