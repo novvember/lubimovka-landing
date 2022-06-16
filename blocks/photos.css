@@ -1,6 +1,6 @@
 .photos {
   margin: 0;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .photos__title {
@@ -33,11 +33,12 @@
   width: 100%;
   aspect-ratio: 1.41;
   object-fit: cover;
+  display: block;
 }
 
 @media screen and (min-width: 720px) {
   .photos {
-    padding: 120px 0;
+    padding: 72px 0;
   }
 
   .photos__title {
@@ -56,10 +57,6 @@
 }
 
 @media screen and (min-width: 1100px) {
-    .photos {
-      padding: 144px 0 150px;
-    }
-  
     .photos__title {
         font-size: 40px;
         line-height: 40px;

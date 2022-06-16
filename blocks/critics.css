@@ -1,6 +1,6 @@
 .critics {
   margin: 0;
-  padding: 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -163,6 +163,10 @@
 }
 
 @media screen and (min-width: 760px) {
+  .critics {
+    padding-block: 72px;
+  }
+
   .critics__head {
     margin: 0 26px 30px 180px;
     width: 568px;
@@ -207,7 +211,7 @@
     margin: 0 0 35px 362px;
     width: 718px;
   }
-  
+
   .critics__title {
     font-size: 40px;
     line-height: 40px;

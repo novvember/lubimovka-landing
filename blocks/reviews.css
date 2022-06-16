@@ -1,6 +1,6 @@
 .reviews {
     margin: 0;
-    padding: 76px 0 0;
+    padding: 27px 0 0;
     overflow: hidden;
   }
 
@@ -130,6 +130,11 @@
   }
 
   @media screen and (min-width: 760px) {
+    .reviews {
+      padding-top: 40px;
+      padding-bottom: 64px;
+    }
+
     .reviews__head {
       margin: 0 26px 30px 180px;
       width: 568px;
