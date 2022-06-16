@@ -1,5 +1,4 @@
 .play {
-  padding-top: 54px;
   padding-bottom: 50px;
 }
 
@@ -36,8 +35,7 @@
   .play {
     --side-margin: 24px;
     --extra-side-margin: 48px;
-    padding-top: 30px;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
