@@ -12,12 +12,73 @@
 <body class="page">
   <div class="content">
     <header class="header">
-      <div class="logo">
-        <img src="./images/logo.svg" class="logo header__logo" alt="Логотип Любимовки">
+      <div class="header__navbar">
+          <a href="#">
+            <img src="./images/logo.svg" class="header__logo" alt="Логотип фестиваля Любимовка">
+          </a>
+
+        <nav class="header__menu">
+           <ul class="header__sections-list">
+             <li class="header__sections-item header__sections-item_type_home-page">
+               <a href="#" class="header__section-link">Главная</a>
+             </li>
+             <li class="header__sections-item">
+               <a href="#" class="header__section-link">Афиша</a>
+             </li>
+             <li class="header__sections-item">
+               <a href="#" class="header__section-link">Библиотека</a>
+             </li>
+             <li class="header__sections-item">
+               <a href="#" class="header__section-link header__section-link_active">Проекты</a>
+             </li>
+             <li class="header__sections-item">
+               <a href="#" class="header__section-link">История</a>
+             </li>
+             <li class="header__sections-item">
+               <a href="#" class="header__section-link">Блог</a>
+             </li>
+             <li class="header__sections-item">
+               <a href="#" class="header__section-link">Новости</a>
+             </li>
+             <li class="header__sections-item">
+               <a href="#" class="header__section-link">О&nbsp;фестивале</a>
+             </li>
+             <li class="header__sections-item">
+               <a href="#" class="header__section-link">Контакты</a>
+             </li>
+           </ul>
+
+           <ul class="header__actions-list">
+            <li class="header__action-item">
+              <a href="#" class="header__extra-link">Поддержать</a>
+            </li>
+          </ul>
+
+           <ul class="header__social-list">
+             <li class="header__social-item">
+               <a href="#" class="header__extra-link">fb</a>
+             </li>
+             <li class="header__social-item">
+               <a href="#" class="header__extra-link">inst</a>
+             </li>
+             <li class="header__social-item">
+               <a href="#" class="header__extra-link">ytube</a>
+             </li>
+             <li class="header__social-item">
+               <a href="#" class="header__extra-link">tlgrm</a>
+             </li>
+             <li class="header__social-item">
+               <a href="#" class="header__extra-link">vk</a>
+             </li>
+           </ul>
+         </nav>
+
+         <button type="button" class="header__menu-button" aria-label="Показать меню"></button>
       </div>
-      <nav class="nav">
-      </nav>
+
+      <button type="button">Проекты</button>
     </header>
+
     <main>
       <section class="play">
         <div class="title play__title">
@@ -117,10 +178,58 @@
         </div>
       </section>
 
+      <!-- Блок с фотографиями #14 -->
       <section class="photos">
+        <h2 class="photos__title">Заголовок блока с фотографиями</h2>
+        <ul class="photos__container">
+          <li class="photos__container-item"><img src="./images/photos-1.png" alt="Фото 1" class="photos__image"></li>
+          <li class="photos__container-item"><img src="./images/photos-2.png" alt="Фото 2" class="photos__image"></li>
+          <li class="photos__container-item"><img src="./images/photos-3.png" alt="Фото 3" class="photos__image"></li>
+          <li class="photos__container-item"><img src="./images/photos-4.png" alt="Фото 4" class="photos__image"></li>
+          <li class="photos__container-item"><img src="./images/photos-5.png" alt="Фото 5" class="photos__image"></li>
+          <li class="photos__container-item"><img src="./images/photos-6.png" alt="Фото 6" class="photos__image"></li>
+          <li class="photos__container-item"><img src="./images/photos-7.png" alt="Фото 7" class="photos__image"></li>
+          <li class="photos__container-item"><img src="./images/photos-8.png" alt="Фото 8" class="photos__image"></li>
+        </ul>
       </section>
 
+      <!-- Рецензии #15 -->
       <section class="critics">
+        <div class="critics__head">
+          <h2 class="critics__title">Рецензии</h2>
+          <div class="critics__slider-container">
+            <button class="critics__slider critics__slider_left"></button>
+            <button class="critics__slider critics__slider_right critics__slider_active"></button>
+          </div>
+          <ul class="critics__indicator">
+            <li class="critics__indicator-item critics__indicator-item_active"></li>
+            <li class="critics__indicator-item"></li>
+            <li class="critics__indicator-item"></li>
+            <li class="critics__indicator-item"></li>
+          </ul>
+        </div>
+        <ul class="critics__articles-list">
+          <li class="critics__article">
+            <img src="./images/NYT.png" alt="Логотип New York Times" class="critics__subtitle">
+            <p class="critics__text">«Действие пьесы «Длань Господня» разворачивается в подвале провинциальной церкви в Техасе, где мать главного героя с группой добровольцев готовит кукольное представление. Ей отчаянно нужна эта работа, её муж недавно умер, оставив её с сыном-подростком в эмоциональной и финансовой яме. И вот жуткая тварь захватывает контроль над левой рукой её беспокойного Джейсона и принимается терроризировать его и всех вокруг. По мере накала страстей окружающие начинают подозревать, что рука одержима самим дьяволом, и пастор Грег предлагает прибегнуть к экзорцизму. Однако «Длань Господня» — это не ужастик, по крайней мере, природа зла тут вовсе не сверхъестественная. Чёрная комедия Аскинса о разделённой надвое душе человека ненавязчиво обнажает глубинные импульсы — сексуальные, саморазрушительные, агрессивные — которые притаились в каждом из нас».</p>
+            <button class="critics__fullread">ЧИТАТЬ ПОЛНОСТЬЮ</button>
+          </li>
+          <li class="critics__article critics__article_inactive">
+            <img src="./images/dog.png" alt="Логотип агентства Собака" class="critics__subtitle">
+            <p class="critics__text">«Действие пьесы «Длань Господня» разворачивается в подвале провинциальной церкви в Техасе, где мать главного героя с группой добровольцев готовит кукольное представление. Ей отчаянно нужна эта работа, её муж недавно умер, оставив её с сыном-подростком в эмоциональной и финансовой яме. И вот жуткая тварь захватывает контроль над левой рукой её беспокойного Джейсона и принимается терроризировать его и всех вокруг. </p>
+            <button class="critics__fullread critics__fullread_inactive">ЧИТАТЬ ПОЛНОСТЬЮ</button>
+          </li>
+          <li class="critics__article critics__article_inactive">
+            <img src="./images/NYT.png" alt="Логотип New York Times" class="critics__subtitle">
+            <p class="critics__text">«Действие пьесы «Длань Господня» разворачивается в подвале провинциальной церкви в Техасе, где мать главного героя с группой добровольцев готовит кукольное представление. Ей отчаянно нужна эта работа, её муж недавно умер, оставив её с сыном-подростком в эмоциональной и финансовой яме. И вот жуткая тварь захватывает контроль над левой рукой её беспокойного Джейсона и принимается терроризировать его и всех вокруг. По мере накала страстей окружающие начинают подозревать, что рука одержима самим дьяволом, и пастор Грег предлагает прибегнуть к экзорцизму. Однако «Длань Господня» — это не ужастик, по крайней мере, природа зла тут вовсе не сверхъестественная. Чёрная комедия Аскинса о разделённой надвое душе человека ненавязчиво обнажает глубинные импульсы — сексуальные, саморазрушительные, агрессивные — которые притаились в каждом из нас».</p>
+            <button class="critics__fullread">ЧИТАТЬ ПОЛНОСТЬЮ</button>
+          </li>
+          <li class="critics__article critics__article_inactive">
+            <img src="./images/dog.png" alt="Логотип агентства Собака" class="critics__subtitle">
+            <p class="critics__text">«Действие пьесы «Длань Господня» разворачивается в подвале провинциальной церкви в Техасе, где мать главного героя с группой добровольцев готовит кукольное представление. Ей отчаянно нужна эта работа, её муж недавно умер, оставив её с сыном-подростком в эмоциональной и финансовой яме. И вот жуткая тварь захватывает контроль над левой рукой её беспокойного Джейсона и принимается терроризировать его и всех вокруг. </p>
+            <button class="critics__fullread critics__fullread_inactive">ЧИТАТЬ ПОЛНОСТЬЮ</button>
+          </li>
+        </ul>
       </section>
 
       <section class="reviews">
