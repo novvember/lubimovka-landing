@@ -14,7 +14,6 @@
   transition: color var(--duration);
 }
 
-/* Фон */
 .button::before {
   content: '';
   position: absolute;
@@ -32,7 +31,20 @@
   width: 100%;
 }
 
-/* Типы кнопок по брендбуку */
+.button:active::before {
+  transform: translateY(-50%) scale(var(--scale));
+}
+
+.button:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+/* Кнопка Small */
 .button_size_small {
   /* Text */
   font-family: 'Formular', sans-serif;
@@ -47,10 +59,34 @@
   padding: 9px 10px;
 }
 
-/* Расположение иконки, если есть */
-.button_icon-align_right {
+.button_small-icon_right {
+  text-align: left;
   padding-right: calc(var(--icon-size) + 9px);
 }
+
+
+/* Кнопка Big */
+.button_size_big {
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #242424;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* Поля */
+  padding: 19px;
+
+  min-width: 240px;
+}
+
+.button_big-icon_right {
+  text-align: left;
+  padding-right: calc(var(--icon-size) + 16px * 2);
+}
+
+
 
 /* Положение границ кнопки */
 .button_borders_br {
@@ -58,20 +94,43 @@
   border-right: var(--border);
 }
 
+.button_borders_full {
+  border: var(--border);
+}
+
 /* Иконка */
-.button_icon-align_right::after {
+.button_size_small::after {
   content: '';
   width: var(--icon-size);
   height: 100%;
   position: absolute;
   top: 50%;
-  right: 0;;
   transform: translateY(-50%);
-
   background-repeat: no-repeat;
   background-position: center;
   transition: background-image var(--duration);
 }
+
+.button_small-icon_right::after {
+  right: 0;
+}
+
+.button_size_big::after {
+  content: '';
+  width: var(--icon-size);
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image var(--duration);
+}
+
+.button_big-icon_right::after {
+  right: 16px;
+}
+
 
 /* Выбор иконки */
 .button_icon_arrow-left::after {
@@ -82,19 +141,12 @@
   background-image: url(../images/icon__arrow-left_white.svg);
 }
 
-
-
-
-
-
-.button:active::before {
-  transform: translateY(-50%) scale(var(--scale));
+.button_icon_arrow-right::after {
+  background-image: url(../images/icon__arrow-right.svg);
 }
 
-
-
-.button:hover {
-  color: #fff;
+.button_icon_arrow-right:hover::after {
+  background-image: url(../images/icon__arrow-right_white.svg);
 }
 
 
@@ -108,14 +160,4 @@
 
 
 
-.button_type_big {
 
-}
-
-.button_type_slider-controls {
-
-}
-
-.button_type_back-button {
-
-}
