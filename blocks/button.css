@@ -1,0 +1,101 @@
+.button {
+
+
+  cursor: pointer;
+
+  font-family: 'Formular', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: .88;
+  color: #242424;
+
+  text-transform: uppercase;
+
+  --icon-size: 20px;
+
+  padding: 9px 10px;
+  padding-right: calc(var(--icon-size) + 9px);
+
+
+  position: relative;
+
+  background-color: transparent;
+
+  border: 1px solid #242424;
+  border-top: none;
+  border-left: none;
+
+
+  transition: color .3s;
+
+
+}
+
+.button::before {
+
+  content: '';
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  height: 100%;
+  width: 0;
+
+  background-color: #242424;
+
+  transition: width .3s, transform .3s;
+
+  z-index: -1;
+}
+
+.button::after {
+  content: '';
+
+  width: var(--icon-size);
+  height: 100%;
+
+  position: absolute;
+  top: 50%;
+  right: 0;;
+
+  transform: translateY(-50%);
+
+  background-image: url(../images/icon__arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+.button:active::before {
+  transform: translateY(-50%) scale(1.1);
+}
+
+
+
+.button:hover {
+  color: #fff;
+}
+
+
+
+.button_type_small {
+
+}
+
+.button_type_big {
+
+}
+
+.button_type_slider-controls {
+
+}
+
+.button_type_back-button {
+
+}

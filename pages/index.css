@@ -7,6 +7,8 @@
 
 @import url("../blocks/content.css");
 
+@import url(../blocks/button.css);
+
 @import url("../blocks/header.css"); /* Пример импорта стилей блока */
 @import url("../blocks/back-button.css");
 
