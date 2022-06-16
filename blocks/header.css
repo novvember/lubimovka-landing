@@ -124,7 +124,7 @@
 
 .header__section-link {
   text-decoration: none;
-  font-family: 'Machina', sans-serif;
+  font-family: 'Neue Machina', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -216,7 +216,7 @@
 .header__extra-link {
   display: block;
   padding: 16px 54px 18px 16px;
-  font-family: 'Formular';
+  font-family: 'Formular', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
