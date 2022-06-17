@@ -41,15 +41,12 @@
 }
 
 .share__buttons {
-  vertical-align: 60%;
   display: inline-flex;
   gap: 8px;
 }
 
-/* Временно, пока не будет готов отдельный блок для кнопок */
-.share__buttons button {
-  height: 16px;
-  font-size: 16px;
-  padding: 0;
-  line-height: 1;
+@media (min-width: 486px) {
+  .share__buttons {
+    vertical-align: 80%;
+  }
 }

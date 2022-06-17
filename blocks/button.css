@@ -68,7 +68,7 @@
 
 /* Кнопка Big */
 .button_size_big {
-  font-family: 'Formular';
+  font-family: 'Formular', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -87,6 +87,25 @@
 .button_big-icon_right {
   text-align: left;
   padding-right: calc(var(--icon-size) + 16px * 2);
+}
+
+/* Кнопка Social */
+.button_size_social {
+  font-family: 'Formular', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: .88;
+  color: #242424;
+  /* Поля */
+  padding: 4px 12px 7px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.button_social-icon_left {
+  text-align: left;
+  padding-left: calc(var(--icon-size) + 2px);
 }
 
 
@@ -145,6 +164,22 @@
 
 .button_big-icon_right::after {
   right: 16px;
+}
+
+.button_size_social::after {
+  content: '';
+  width: var(--icon-size);
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image var(--duration);
+}
+
+.button_social-icon_left::after {
+  left: 0;
 }
 
 
