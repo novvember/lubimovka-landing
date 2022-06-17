@@ -131,35 +131,8 @@
 }
 
 .critics__fullread {
-  width: 210px;
-  height: 32px;
-  background-color: transparent;
-  background: url(../images/arrow-45.svg) no-repeat;
-  background-size: 25px 25px;
-  background-position: left center;
-  border-top: none;
-  border-right: none;
   margin: 0 0 0 26px;
-  padding: 8px 5px 9px 28px;
-  font-family: 'Formular', sans-serif;
-  font-size: 16px;
-  line-height: 14px;
-  font-weight: 300;
-  color: #242424;
-  text-align: start;
-  transition: background-color 0.7s linear;
-}
-
-.critics__fullread:hover {
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-.critics__fullread_inactive:hover {
-  background-color: transparent;
-  color: #242424;
-  cursor: default;
+  z-index: 1;
 }
 
 @media screen and (min-width: 760px) {

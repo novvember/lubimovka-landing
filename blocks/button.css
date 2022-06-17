@@ -40,10 +40,6 @@
 }
 
 
-
-
-
-
 /* Кнопка Small */
 .button_size_small {
   /* Text */
@@ -62,6 +58,11 @@
 .button_small-icon_right {
   text-align: left;
   padding-right: calc(var(--icon-size) + 9px);
+}
+
+.button_small-icon_left {
+  text-align: left;
+  padding-left: calc(var(--icon-size) + 9px);
 }
 
 
@@ -89,11 +90,15 @@
 }
 
 
-
 /* Положение границ кнопки */
 .button_borders_br {
   border-bottom: var(--border);
   border-right: var(--border);
+}
+
+.button_borders_bl {
+  border-bottom: var(--border);
+  border-left: var(--border);
 }
 
 .button_borders_t {
@@ -103,6 +108,7 @@
 .button_borders_full {
   border: var(--border);
 }
+
 
 /* Иконка */
 .button_size_small::after {
@@ -119,6 +125,10 @@
 
 .button_small-icon_right::after {
   right: 0;
+}
+
+.button_small-icon_left::after {
+  left: 0;
 }
 
 .button_size_big::after {
