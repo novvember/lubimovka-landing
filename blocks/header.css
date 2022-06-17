@@ -318,6 +318,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 12px;
+  transition: opacity .3s, transform .3s;
+}
+
+.header__menu-button:hover {
+  opacity: .9;
+}
+
+.header__menu-button:active {
+  transform: scale(1.05);
 }
 
 .header__menu-button_type_close {
