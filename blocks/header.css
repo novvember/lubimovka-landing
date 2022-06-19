@@ -16,7 +16,7 @@
 
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 
     border-bottom: 1px solid #242424;
   }
@@ -49,7 +49,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   overflow-y: scroll;
   /* Фон */
@@ -308,7 +308,7 @@
   position: fixed;
   bottom: 128px;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   display: block;
   width: 72px;
   height: 72px;
