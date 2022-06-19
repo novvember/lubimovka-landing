@@ -21,7 +21,6 @@
     grid-template-columns: 1fr min-content min-content;
     grid-template-areas: "title pagination buttons";
     padding-inline: 120px;
-
   }
 }
 
@@ -31,11 +30,9 @@
   }
 }
 
-
 .slider__title {
   grid-area: title;
 }
-
 
 /* Кнопки */
 .slider__buttons {
@@ -51,14 +48,11 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
   cursor: pointer;
-
   transition: background-color .3s ease;
 }
 

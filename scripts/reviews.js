@@ -1,6 +1,6 @@
 import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
-const swiper = new Swiper('.critics', {
+const swiper = new Swiper('.reviews', {
   pagination: {
     el: '.slider__pagination',
     bulletClass: 'slider__pagination-bullet',
@@ -13,22 +13,19 @@ const swiper = new Swiper('.critics', {
     prevEl: '.slider__button_type_prev',
   },
 
-  centeredSlides: true,
-  slideToClickedSlide: true,
-  autoHeight: true,
-
-  wrapperClass: 'critics__articles',
-  slideClass: 'critics__article',
-  slideActiveClass: 'critics__article_active',
+  wrapperClass: 'reviews__articles',
+  slideClass: 'reviews__article',
 
   breakpoints: {
     320: {
       slidesPerView: 1,
       spaceBetween: 0,
+      slidesPerGroup: 1,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 30,
+      slidesPerGroup: 3,
     },
   }
 });
