@@ -239,23 +239,18 @@
       </section>
 
       <!-- Critics -->
-      <section class="critics">
-        <div class="critics__head">
-          <h2 class="critics__title">Рецензии</h2>
-          <div class="critics__slider-container">
-            <button class="critics__slider critics__slider_left"></button>
-            <button class="critics__slider critics__slider_right critics__slider_active"></button>
+      <section class="critics slider">
+        <div class="slider__header">
+          <h2 class="critics__title slider__title">Рецензии</h2>
+          <div class="slider__buttons">
+            <button type="button" class="slider__button slider__button_type_prev"></button>
+            <button type="button" class="slider__button slider__button_type_next"></button>
           </div>
-          <ul class="critics__indicator">
-            <li class="critics__indicator-item critics__indicator-item_active"></li>
-            <li class="critics__indicator-item"></li>
-            <li class="critics__indicator-item"></li>
-            <li class="critics__indicator-item"></li>
-          </ul>
+          <div class="slider__pagination"></div>
         </div>
-        <ul class="critics__articles-list">
-          <li class="critics__article">
-            <img src="./images/NYT.png" alt="Логотип New York Times" class="critics__subtitle">
+        <ul class="critics__articles swiper-wrapper slider__slides">
+          <li class="critics__article swiper-slide sliders__slide">
+            <img src="./images/NYT.png" alt="Логотип New York Times" class="critics__logo">
             <p class="critics__text">&laquo;Действие пьесы &bdquo;Длань Господня&ldquo; разворачивается в&nbsp;подвале провинциальной церкви в&nbsp;Техасе, где мать главного героя с&nbsp;группой добровольцев готовит кукольное представление. Ей&nbsp;отчаянно нужна эта работа, её&nbsp;муж недавно умер, оставив её&nbsp;с&nbsp;сыном-подростком в&nbsp;эмоциональной и&nbsp;финансовой яме. И&nbsp;вот жуткая тварь захватывает контроль над левой рукой её&nbsp;беспокойного Джейсона и&nbsp;принимается терроризировать его и&nbsp;всех вокруг. По&nbsp;мере накала страстей окружающие начинают подозревать, что рука одержима самим дьяволом, и&nbsp;пастор Грег предлагает прибегнуть к&nbsp;экзорцизму. Однако &bdquo;Длань Господня&ldquo;&nbsp;&mdash; это не&nbsp;ужастик, по&nbsp;крайней мере, природа зла тут вовсе не&nbsp;сверхъестественная. Чёрная комедия Аскинса о&nbsp;разделённой надвое душе человека ненавязчиво обнажает глубинные импульсы&nbsp;&mdash; сексуальные, саморазрушительные, агрессивные&nbsp;&mdash; которые притаились в&nbsp;каждом из&nbsp;нас&raquo;.</p>
             <a
               href="#"
@@ -267,34 +262,18 @@
               button_borders_bl"
             >Читать полностью</a>
           </li>
-          <li class="critics__article critics__article_inactive">
-            <img src="./images/dog.png" alt="Логотип агентства Собака" class="critics__subtitle">
+          <li class="critics__article swiper-slide sliders__slide">
+            <img src="./images/dog.png" alt="Логотип агентства Собака" class="critics__logo">
             <p class="critics__text">&laquo;Действие пьесы &laquo;Длань Господня&raquo; разворачивается в&nbsp;подвале провинциальной церкви в&nbsp;Техасе, где мать главного героя с&nbsp;группой добровольцев готовит кукольное представление. Ей&nbsp;отчаянно нужна эта работа, её&nbsp;муж недавно умер, оставив её&nbsp;с&nbsp;сыном-подростком в&nbsp;эмоциональной и&nbsp;финансовой яме. И&nbsp;вот жуткая тварь захватывает контроль над левой рукой её&nbsp;беспокойного Джейсона и&nbsp;принимается терроризировать его и&nbsp;всех вокруг.</p>
-            <a
-              href="#"
-              class="critics__fullread
-              button
-              button_size_small
-              button_small-icon_left
-              button_icon_arrow-diagonal
-              button_borders_bl"
-          >Читать полностью</a>
-        </li>
-          <li class="critics__article critics__article_inactive">
-            <img src="./images/NYT.png" alt="Логотип New York Times" class="critics__subtitle">
+            <button class="critics__fullread critics__fullread_inactive">ЧИТАТЬ ПОЛНОСТЬЮ</button>
+          </li>
+          <li class="critics__article swiper-slide sliders__slide">
+            <img src="./images/NYT.png" alt="Логотип New York Times" class="critics__logo">
             <p class="critics__text">&laquo;Действие пьесы &bdquo;Длань Господня&ldquo; разворачивается в&nbsp;подвале провинциальной церкви в&nbsp;Техасе, где мать главного героя с&nbsp;группой добровольцев готовит кукольное представление. Ей&nbsp;отчаянно нужна эта работа, её&nbsp;муж недавно умер, оставив её&nbsp;с&nbsp;сыном-подростком в&nbsp;эмоциональной и&nbsp;финансовой яме. И&nbsp;вот жуткая тварь захватывает контроль над левой рукой её&nbsp;беспокойного Джейсона и&nbsp;принимается терроризировать его и&nbsp;всех вокруг. По&nbsp;мере накала страстей окружающие начинают подозревать, что рука одержима самим дьяволом, и&nbsp;пастор Грег предлагает прибегнуть к&nbsp;экзорцизму. Однако &bdquo;Длань Господня&ldquo;&nbsp;&mdash; это не&nbsp;ужастик, по&nbsp;крайней мере, природа зла тут вовсе не&nbsp;сверхъестественная. Чёрная комедия Аскинса о&nbsp;разделённой надвое душе человека ненавязчиво обнажает глубинные импульсы&nbsp;&mdash; сексуальные, саморазрушительные, агрессивные&nbsp;&mdash; которые притаились в&nbsp;каждом из&nbsp;нас&raquo;.</p>
-            <a
-              href="#"
-              class="critics__fullread
-              button
-              button_size_small
-              button_small-icon_left
-              button_icon_arrow-diagonal
-              button_borders_bl"
-            >Читать полностью</a>
-        </li>
-          <li class="critics__article critics__article_inactive">
-            <img src="./images/dog.png" alt="Логотип агентства Собака" class="critics__subtitle">
+            <button class="critics__fullread">ЧИТАТЬ ПОЛНОСТЬЮ</button>
+          </li>
+          <li class="critics__article swiper-slide sliders__slide">
+            <img src="./images/dog.png" alt="Логотип агентства Собака" class="critics__logo">
             <p class="critics__text">&laquo;Действие пьесы &laquo;Длань Господня&raquo; разворачивается в&nbsp;подвале провинциальной церкви в&nbsp;Техасе, где мать главного героя с&nbsp;группой добровольцев готовит кукольное представление. Ей&nbsp;отчаянно нужна эта работа, её&nbsp;муж недавно умер, оставив её&nbsp;с&nbsp;сыном-подростком в&nbsp;эмоциональной и&nbsp;финансовой яме. И&nbsp;вот жуткая тварь захватывает контроль над левой рукой её&nbsp;беспокойного Джейсона и&nbsp;принимается терроризировать его и&nbsp;всех вокруг.</p>
             <a
               href="#"
@@ -310,66 +289,61 @@
       </section>
 
       <!-- Reviews -->
-      <section class="reviews">
-        <div class="reviews__head">
-          <h2 class="reviews__title">Отзывы зрителей</h2>
-          <div class="reviews__slider-container">
-            <button class="reviews__slider reviews__slider_left"></button>
-            <button class="reviews__slider reviews__slider_right reviews__slider_active"></button>
+      <section class="reviews slider">
+        <div class="slider__header">
+          <h2 class="reviews__title slider__title">Отзывы зрителей</h2>
+          <div class="slider__buttons">
+            <button type="button" class="slider__button slider__button_type_prev"></button>
+            <button type="button" class="slider__button slider__button_type_next"></button>
           </div>
-          <ul class="reviews__indicator">
-            <li class="reviews__indicator-item reviews__indicator-item_active"></li>
-            <li class="reviews__indicator-item"></li>
-            <li class="reviews__indicator-item"></li>
-            <li class="reviews__indicator-item"></li>
-          </ul>
+          <div class="slider__pagination"></div>
         </div>
-        <ul class="reviews__articles-list">
-          <li class="reviews__article">
+        <ul class="reviews__articles swiper-wrapper slider__slides">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Что-то похожее на&nbsp;эффект от&nbsp;мультфильмов типа &laquo;Сауз Парк&raquo; или про коня Боджэка возникает&nbsp;&mdash; я&nbsp;думаю, и&nbsp;пьеса написана с&nbsp;этой интонацией американских взрослых мультсериалов. И&nbsp;как хорошо все это с&nbsp;куклой-носочком. Так все чисто сделано!</p>
             <p class="reviews__name">Наталья Зайцева</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Для самой этой истории формат читки работает отличным ироническим отстранением</p>
             <p class="reviews__name">Дина Годер</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на&nbsp;нем надето, какую машину он&nbsp;водит, и&nbsp;что за&nbsp;плакат висит в&nbsp;подвале церкви. Это было приятно, ведь я&nbsp;как будто сама поучаствовала в&nbsp;спектакле</p>
             <p class="reviews__name">Дарья Морозова</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Что-то похожее на&nbsp;эффект от&nbsp;мультфильмов типа &laquo;Сауз Парк&raquo; или про коня Боджэка возникает&nbsp;&mdash; я&nbsp;думаю, и&nbsp;пьеса написана с&nbsp;этой интонацией американских взрослых мультсериалов. И&nbsp;как хорошо все это с&nbsp;куклой-носочком. Так все чисто сделано!</p>
             <p class="reviews__name">Наталья Зайцева</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Для самой этой истории формат читки работает отличным ироническим отстранением</p>
             <p class="reviews__name">Дина Годер</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на&nbsp;нем надето, какую машину он&nbsp;водит, и&nbsp;что за&nbsp;плакат висит в&nbsp;подвале церкви. Это было приятно, ведь я&nbsp;как будто сама поучаствовала в&nbsp;спектакле</p>
             <p class="reviews__name">Дарья Морозова</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Что-то похожее на&nbsp;эффект от&nbsp;мультфильмов типа &laquo;Сауз Парк&raquo; или про коня Боджэка возникает&nbsp;&mdash; я&nbsp;думаю, и&nbsp;пьеса написана с&nbsp;этой интонацией американских взрослых мультсериалов. И&nbsp;как хорошо все это с&nbsp;куклой-носочком. Так все чисто сделано!</p>
             <p class="reviews__name">Наталья Зайцева</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Для самой этой истории формат читки работает отличным ироническим отстранением</p>
             <p class="reviews__name">Дина Годер</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на&nbsp;нем надето, какую машину он&nbsp;водит, и&nbsp;что за&nbsp;плакат висит в&nbsp;подвале церкви. Это было приятно, ведь я&nbsp;как будто сама поучаствовала в&nbsp;спектакле</p>
             <p class="reviews__name">Дарья Морозова</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Что-то похожее на&nbsp;эффект от&nbsp;мультфильмов типа &laquo;Сауз Парк&raquo; или про коня Боджэка возникает&nbsp;&mdash; я&nbsp;думаю, и&nbsp;пьеса написана с&nbsp;этой интонацией американских взрослых мультсериалов. И&nbsp;как хорошо все это с&nbsp;куклой-носочком. Так все чисто сделано!</p>
             <p class="reviews__name">Наталья Зайцева</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Для самой этой истории формат читки работает отличным ироническим отстранением</p>
             <p class="reviews__name">Дина Годер</p>
           </li>
-          <li class="reviews__article">
+          <li class="reviews__article swiper-slide sliders__slide">
             <p class="reviews__text">Мне данный формат дал возможность самой выбирать, как двигается персонаж, что на&nbsp;нем надето, какую машину он&nbsp;водит, и&nbsp;что за&nbsp;плакат висит в&nbsp;подвале церкви. Это было приятно, ведь я&nbsp;как будто сама поучаствовала в&nbsp;спектакле</p>
             <p class="reviews__name">Дарья Морозова</p>
           </li>
