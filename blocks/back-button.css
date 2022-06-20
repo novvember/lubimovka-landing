@@ -1,12 +1,12 @@
 .back-button {
-  display: inline-block;
+  display: inline-flex;
   vertical-align: top;
   padding-top: 30px;
 }
 
 @media (min-width: 850px) {
   .back-button {
-    display: block;
+    display: flex;
     padding: 33px 30px 30px;
   }
 }

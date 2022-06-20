@@ -53,25 +53,25 @@
 
         <ul class="header__actions-list">
         <li class="header__action-item">
-          <a href="#" class="header__extra-link">Поддержать</a>
+          <a href="#" class="header__extra-link button">Поддержать</a>
         </li>
       </ul>
 
         <ul class="header__social-list">
           <li class="header__social-item">
-            <a href="#" class="header__extra-link">fb</a>
+            <a href="#" class="header__extra-link button">fb</a>
           </li>
           <li class="header__social-item">
-            <a href="#" class="header__extra-link">inst</a>
+            <a href="#" class="header__extra-link button">inst</a>
           </li>
           <li class="header__social-item">
-            <a href="#" class="header__extra-link">ytube</a>
+            <a href="#" class="header__extra-link button">ytube</a>
           </li>
           <li class="header__social-item">
-            <a href="#" class="header__extra-link">tlgrm</a>
+            <a href="#" class="header__extra-link button">tlgrm</a>
           </li>
           <li class="header__social-item">
-            <a href="#" class="header__extra-link">vk</a>
+            <a href="#" class="header__extra-link button">vk</a>
           </li>
         </ul>
       </nav>
@@ -79,8 +79,15 @@
       <button type="button" class="header__menu-button" aria-label="Показать меню"></button>
     </header>
 
+    <!-- Back-button -->
     <nav class="back-button">
-      <button type="button" class="back-button__button">Проекты</button>
+      <a class="back-button__button
+      button
+      button_size_small
+      button_small-icon_right
+      button_icon_arrow-left
+      button_borders_br
+      ">Проекты</a>
     </nav>
 
     <main>
@@ -95,7 +102,17 @@
           <time
             class="title__time"
             datetime="2022-05-12 20:00">12&nbsp;мая 20:00</time>
-          <button class="title__tickets-button">Билеты</button>
+          <button
+            type="button"
+            class="title__tickets-button
+              button
+              button_size_big
+              button_big-icon_right
+              button_borders_full
+              button_icon_arrow-right"
+          >
+            Билеты
+          </button>
         </div>
 
         <img
@@ -146,7 +163,7 @@
             src="./images/video-thumb.png"
             alt="Видео спектакля"
             data-videolink="https://www.youtube.com/embed/qUkeNlgz36Y">
-          <button class="video__playback-button" aria-label="Воспроизвести видео"></button>
+          <button class="video__playback-button button button_size_round button_icon_playback" aria-label="Воспроизвести видео"></button>
           <template class="video__iframe-template">
             <iframe
               class="video__iframe"
@@ -180,12 +197,28 @@
         <div class="card play__card">
           <h2 class="card__title">Почитать пьесу</h2>
           <div class="card__card">
-            <h3 class="card__play-name">С_училища</h3>
-            <a href="#" class="card__link card__linl_type_external">Смотреть читку</a>
-            <a href="#" class="card__link card__linl_type_download">Скачать пьесу</a>
-            <p class="card__author">Андрей Иванов</p>
-            <p class="card__text">Санкт-Петербург</p>
-            <p class="card__text">2020</p>
+            <div class="card__play">
+              <h3 class="card__play-name">С_училища</h3>
+              <a href="#"
+                class="button
+                  button_size_big
+                  button_big-icon_right
+                  button_icon_arrow-diagonal
+                  button_borders_t"
+              >
+                Смотреть читку</a>
+                <a href="#"
+                class="button
+                  button_size_big
+                  button_big-icon_right
+                  button_icon_arrow-down
+                  button_borders_t"
+              >
+                Скачать пьесу</a>
+            </div>
+              <p class="card__author">Андрей Иванов</p>
+              <p class="card__text">Санкт-Петербург</p>
+              <p class="card__text">2020</p>
           </div>
         </div>
       </section>
@@ -224,22 +257,54 @@
           <li class="critics__article">
             <img src="./images/NYT.png" alt="Логотип New York Times" class="critics__subtitle">
             <p class="critics__text">&laquo;Действие пьесы &bdquo;Длань Господня&ldquo; разворачивается в&nbsp;подвале провинциальной церкви в&nbsp;Техасе, где мать главного героя с&nbsp;группой добровольцев готовит кукольное представление. Ей&nbsp;отчаянно нужна эта работа, её&nbsp;муж недавно умер, оставив её&nbsp;с&nbsp;сыном-подростком в&nbsp;эмоциональной и&nbsp;финансовой яме. И&nbsp;вот жуткая тварь захватывает контроль над левой рукой её&nbsp;беспокойного Джейсона и&nbsp;принимается терроризировать его и&nbsp;всех вокруг. По&nbsp;мере накала страстей окружающие начинают подозревать, что рука одержима самим дьяволом, и&nbsp;пастор Грег предлагает прибегнуть к&nbsp;экзорцизму. Однако &bdquo;Длань Господня&ldquo;&nbsp;&mdash; это не&nbsp;ужастик, по&nbsp;крайней мере, природа зла тут вовсе не&nbsp;сверхъестественная. Чёрная комедия Аскинса о&nbsp;разделённой надвое душе человека ненавязчиво обнажает глубинные импульсы&nbsp;&mdash; сексуальные, саморазрушительные, агрессивные&nbsp;&mdash; которые притаились в&nbsp;каждом из&nbsp;нас&raquo;.</p>
-            <button class="critics__fullread">ЧИТАТЬ ПОЛНОСТЬЮ</button>
+            <a
+              href="#"
+              class="critics__fullread
+              button
+              button_size_small
+              button_small-icon_left
+              button_icon_arrow-diagonal
+              button_borders_bl"
+            >Читать полностью</a>
           </li>
           <li class="critics__article critics__article_inactive">
             <img src="./images/dog.png" alt="Логотип агентства Собака" class="critics__subtitle">
             <p class="critics__text">&laquo;Действие пьесы &laquo;Длань Господня&raquo; разворачивается в&nbsp;подвале провинциальной церкви в&nbsp;Техасе, где мать главного героя с&nbsp;группой добровольцев готовит кукольное представление. Ей&nbsp;отчаянно нужна эта работа, её&nbsp;муж недавно умер, оставив её&nbsp;с&nbsp;сыном-подростком в&nbsp;эмоциональной и&nbsp;финансовой яме. И&nbsp;вот жуткая тварь захватывает контроль над левой рукой её&nbsp;беспокойного Джейсона и&nbsp;принимается терроризировать его и&nbsp;всех вокруг.</p>
-            <button class="critics__fullread critics__fullread_inactive">ЧИТАТЬ ПОЛНОСТЬЮ</button>
-          </li>
+            <a
+              href="#"
+              class="critics__fullread
+              button
+              button_size_small
+              button_small-icon_left
+              button_icon_arrow-diagonal
+              button_borders_bl"
+          >Читать полностью</a>
+        </li>
           <li class="critics__article critics__article_inactive">
             <img src="./images/NYT.png" alt="Логотип New York Times" class="critics__subtitle">
             <p class="critics__text">&laquo;Действие пьесы &bdquo;Длань Господня&ldquo; разворачивается в&nbsp;подвале провинциальной церкви в&nbsp;Техасе, где мать главного героя с&nbsp;группой добровольцев готовит кукольное представление. Ей&nbsp;отчаянно нужна эта работа, её&nbsp;муж недавно умер, оставив её&nbsp;с&nbsp;сыном-подростком в&nbsp;эмоциональной и&nbsp;финансовой яме. И&nbsp;вот жуткая тварь захватывает контроль над левой рукой её&nbsp;беспокойного Джейсона и&nbsp;принимается терроризировать его и&nbsp;всех вокруг. По&nbsp;мере накала страстей окружающие начинают подозревать, что рука одержима самим дьяволом, и&nbsp;пастор Грег предлагает прибегнуть к&nbsp;экзорцизму. Однако &bdquo;Длань Господня&ldquo;&nbsp;&mdash; это не&nbsp;ужастик, по&nbsp;крайней мере, природа зла тут вовсе не&nbsp;сверхъестественная. Чёрная комедия Аскинса о&nbsp;разделённой надвое душе человека ненавязчиво обнажает глубинные импульсы&nbsp;&mdash; сексуальные, саморазрушительные, агрессивные&nbsp;&mdash; которые притаились в&nbsp;каждом из&nbsp;нас&raquo;.</p>
-            <button class="critics__fullread">ЧИТАТЬ ПОЛНОСТЬЮ</button>
-          </li>
+            <a
+              href="#"
+              class="critics__fullread
+              button
+              button_size_small
+              button_small-icon_left
+              button_icon_arrow-diagonal
+              button_borders_bl"
+            >Читать полностью</a>
+        </li>
           <li class="critics__article critics__article_inactive">
             <img src="./images/dog.png" alt="Логотип агентства Собака" class="critics__subtitle">
             <p class="critics__text">&laquo;Действие пьесы &laquo;Длань Господня&raquo; разворачивается в&nbsp;подвале провинциальной церкви в&nbsp;Техасе, где мать главного героя с&nbsp;группой добровольцев готовит кукольное представление. Ей&nbsp;отчаянно нужна эта работа, её&nbsp;муж недавно умер, оставив её&nbsp;с&nbsp;сыном-подростком в&nbsp;эмоциональной и&nbsp;финансовой яме. И&nbsp;вот жуткая тварь захватывает контроль над левой рукой её&nbsp;беспокойного Джейсона и&nbsp;принимается терроризировать его и&nbsp;всех вокруг.</p>
-            <button class="critics__fullread critics__fullread_inactive">ЧИТАТЬ ПОЛНОСТЬЮ</button>
+            <a
+              href="#"
+              class="critics__fullread
+              button
+              button_size_small
+              button_small-icon_left
+              button_icon_arrow-diagonal
+              button_borders_bl"
+            >Читать полностью</a>
           </li>
         </ul>
       </section>
@@ -321,9 +386,9 @@
       <section class="share">
         <h2 class="share__title">
           Рассказать<span class="share__buttons">
-            <button>fb</button>
-            <button>vk</button>
-            <button>twtr</button>
+            <a class="button button_size_social button_social-icon_left button_icon_arrow-right button_borders_bl">fb</a>
+            <a class="button button_size_social button_social-icon_left button_icon_arrow-right button_borders_bl">vk</a>
+            <a class="button button_size_social button_social-icon_left button_icon_arrow-right button_borders_bl">twtr</a>
           </span><br>
           о&nbsp;спектакле в&nbsp;соцсетях
         </h2>

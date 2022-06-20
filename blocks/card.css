@@ -17,9 +17,12 @@
 .card__card {
   max-width: 240px;
   margin: 0 auto;
+}
+
+.card__play {
   display: flex;
   flex-direction: column;
-
+  background-color: #B7C09D;
 }
 
 .card__play-name {
@@ -29,51 +32,7 @@
   margin: 0;
   padding: 16px;
   padding-bottom: 140px;
-  background-color: #B7C09D;
-}
 
-.card__link {
-  margin: 0;
-  padding: 16px;
-  padding-right: 67px;
-  border-top: 1px solid #242424;
-  /* Иконка */
-  background-color: #B7C09D;
-  background-position: right 16px center;
-  background-repeat: no-repeat;
-  background-size: 25px auto;
-  /* Текст */
-  text-transform: uppercase;
-  font-family: 'Formular', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.38;
-  color: #242424;
-  text-decoration: none;
-  /* Анимация */
-  transition: all .3s;
-}
-
-.card__link:hover {
-  background-color: #242424;
-  color: #fff;
-}
-
-.card__linl_type_external {
-  background-image: url(../images/icon_arrow-diagonal.svg);
-}
-
-.card__linl_type_external:hover {
-  background-image: url(../images/icon_arrow-diagonal_white.svg);
-}
-
-.card__linl_type_download {
-  background-image: url(../images/icon__arrow-down.svg);
-}
-
-.card__linl_type_download:hover {
-  background-image: url(../images/icon__arrow-down_white.svg);
 }
 
 .card__author {
