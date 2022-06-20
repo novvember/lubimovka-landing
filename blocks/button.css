@@ -3,7 +3,7 @@
   /* Перменные блока */
   --icon-size: 20px;
   --border: 1px solid #242424;
-  --duration: .3s;
+  --duration: 0.3s;
   --bg-color: #242424;
   --scale: 1.1;
   /* Сброс параметров */
@@ -15,7 +15,7 @@
 }
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -39,7 +39,6 @@
   color: #fff;
 }
 
-
 /* Положение границ кнопки */
 .button_borders_br {
   border-bottom: var(--border);
@@ -58,7 +57,6 @@
 .button_borders_full {
   border: var(--border);
 }
-
 
 /* Выбор иконки */
 .button_icon_arrow-left::after {
@@ -101,15 +99,14 @@
   background-image: url(../images/icon__playback_white.svg);
 }
 
-
 /* Кнопка Small */
 .button_size_small {
   /* Text */
-  font-family: 'Formular', sans-serif;
+  font-family: "Formular", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: .88;
+  line-height: 0.88;
   color: #242424;
   text-transform: uppercase;
   text-decoration: none;
@@ -128,7 +125,7 @@
 }
 
 .button_size_small::after {
-  content: '';
+  content: "";
   width: var(--icon-size);
   height: 100%;
   position: absolute;
@@ -147,10 +144,9 @@
   left: 0;
 }
 
-
 /* Кнопка Big */
 .button_size_big {
-  font-family: 'Formular', sans-serif;
+  font-family: "Formular", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -172,7 +168,7 @@
 }
 
 .button_size_big::after {
-  content: '';
+  content: "";
   width: var(--icon-size);
   height: 100%;
   position: absolute;
@@ -187,14 +183,13 @@
   right: 16px;
 }
 
-
 /* Кнопка Social */
 .button_size_social {
-  font-family: 'Formular', sans-serif;
+  font-family: "Formular", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: .88;
+  line-height: 0.88;
   color: #242424;
   /* Поля */
   padding: 4px 12px 7px;
@@ -208,7 +203,7 @@
 }
 
 .button_size_social::after {
-  content: '';
+  content: "";
   width: var(--icon-size);
   height: 100%;
   position: absolute;
@@ -223,17 +218,16 @@
   left: 0;
 }
 
-
 /* Кнопка Round */
 .button_size_round {
   box-sizing: border-box;
   z-index: 1;
   border-radius: 50%;
-  background-color: #ECEBE8;
+  background-color: #ecebe8;
 }
 
 .button_size_round::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -255,7 +249,7 @@
 }
 
 .button_size_round::after {
-  content: '';
+  content: "";
   width: var(--icon-size);
   height: var(--icon-size);
   position: absolute;

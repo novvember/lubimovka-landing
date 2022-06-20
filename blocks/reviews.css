@@ -1,5 +1,5 @@
 .reviews {
-    padding: 27px 0 0;
+  padding: 27px 0 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -11,7 +11,7 @@
 
 /* Заголовок блока */
 .reviews__title {
-  font-family: 'Neue Machina', sans-serif;
+  font-family: "Neue Machina", sans-serif;
   font-style: normal;
   font-size: 28px;
   line-height: 32px;
@@ -23,8 +23,8 @@
 
 @media (min-width: 768px) {
   .reviews__title {
-  font-size: 40px;
-  line-height: 1;
+    font-size: 40px;
+    line-height: 1;
   }
 }
 
@@ -53,7 +53,7 @@
 
 .reviews__text {
   margin: 0;
-  font-family: 'Formular', sans-serif;
+  font-family: "Formular", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 300;
@@ -63,7 +63,7 @@
 
 .reviews__name {
   margin: 0;
-  font-family: 'Neue Machina', sans-serif;
+  font-family: "Neue Machina", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;

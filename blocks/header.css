@@ -22,7 +22,6 @@
   }
 }
 
-
 /* Логотип */
 .header__logo {
   display: inline-block;
@@ -38,13 +37,12 @@
   }
 }
 
-
 /* Меню со всеми ссылками шапки */
 .header__menu {
   /* Скрытие меню */
   max-height: 0px;
   overflow: hidden;
-  transition: max-height .3s;
+  transition: max-height 0.3s;
   /* Позиционирование поверх контента */
   position: fixed;
   top: 0;
@@ -74,7 +72,6 @@
     overflow: visible;
   }
 }
-
 
 /* Список ссылок на другие разделы сайта */
 .header__sections-list {
@@ -124,7 +121,7 @@
 
 .header__section-link {
   text-decoration: none;
-  font-family: 'Neue Machina', sans-serif;
+  font-family: "Neue Machina", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -135,7 +132,7 @@
 
 @media (min-width: 850px) {
   .header__section-link {
-    font-family: 'Formular', sans-serif;
+    font-family: "Formular", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.38;
@@ -144,16 +141,16 @@
 
 .header__section-link::before,
 .header__section-link::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 1.46em;
-  width: .57em;
+  width: 0.57em;
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
 
 .header__section-link::before {
@@ -167,10 +164,9 @@
 .header__section-link:hover::before,
 .header__section-link:hover::after,
 .header__section-link_active::before,
-.header__section-link_active::after{
+.header__section-link_active::after {
   opacity: 1;
 }
-
 
 /* Список ссылок на дополнительные действия, типа пожертвований */
 .header__actions-list {
@@ -211,12 +207,11 @@
   }
 }
 
-
 /* Общий элемент для ссылок-кнопок в шапке */
 .header__extra-link {
   display: block;
   padding: 16px 54px 18px 16px;
-  font-family: 'Formular', sans-serif;
+  font-family: "Formular", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -227,7 +222,7 @@
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: right 15px center;
-  transition: color .3s, background-color .3s, background-image .3s;
+  transition: color 0.3s, background-color 0.3s, background-image 0.3s;
 }
 
 @media (min-width: 850px) {
@@ -262,7 +257,6 @@
   }
 }
 
-
 /* Список ссылок на социальные сети */
 .header__social-list {
   list-style: none;
@@ -290,7 +284,7 @@
 }
 
 .header__social-item {
-  width: calc(50% - .5px);
+  width: calc(50% - 0.5px);
   outline: 1px solid #000;
 }
 
@@ -300,7 +294,6 @@
     outline: none;
   }
 }
-
 
 /* Кнопка-бургер для открытия меню */
 .header__menu-button {
@@ -318,11 +311,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 12px;
-  transition: opacity .3s, transform .3s;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .header__menu-button:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .header__menu-button:active {

@@ -25,13 +25,13 @@
 .critics__article {
   padding: 77px 24px 72px;
   background-color: #fff;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 @media (min-width: 768px) {
   .critics__article {
     padding: 55px 24px 72px;
-    opacity: .4;
+    opacity: 0.4;
   }
 }
 
@@ -64,7 +64,7 @@
 .critics__text {
   margin: 0;
   margin-bottom: 32px;
-  font-family: 'Formular', sans-serif;
+  font-family: "Formular", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 300;
