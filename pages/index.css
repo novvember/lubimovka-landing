@@ -8,3 +8,11 @@
 @import url("../blocks/content.css");
 
 @import url("../blocks/header.css"); /* Пример импорта стилей блока */
+
+@import url("../blocks/footer.css");
+@import url("../blocks/footer-grid.css");
+@import url("../blocks/footer-blocks.css");
+@import url("../blocks/footer-links-list.css");
+@import url("../blocks/footer-address.css");
+@import url("../blocks/footer-logos.css");
+@import url("../blocks/footer-logos-list.css");
