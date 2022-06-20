@@ -40,33 +40,6 @@
   grid-area: buttons;
 }
 
-.slider__button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.slider__button_type_prev {
-  background-image: url(../images/slider-arrow.svg);
-}
-
-.slider__button_type_next {
-  background-image: url(../images/slider-arrow-right.svg);
-}
-
-.slider__button:hover {
-  background-color: #242424;
-}
-
 /* Индикаторы страниц */
 .slider__pagination {
   list-style: none;

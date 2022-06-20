@@ -9,8 +9,8 @@ const swiper = new Swiper('.reviews', {
   },
 
   navigation: {
-    nextEl: '.slider__button_type_next',
-    prevEl: '.slider__button_type_prev',
+    nextEl: '.slider-button_type_next',
+    prevEl: '.slider-button_type_prev',
   },
 
   wrapperClass: 'reviews__articles',
