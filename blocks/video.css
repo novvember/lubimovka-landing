@@ -17,7 +17,7 @@
   transform: translate(-50%, -50%);
   width: 64px;
   aspect-ratio: 1;
-  cursor: pointer;
+  /* cursor: pointer;
   border: none;
   border-radius: 50%;
   background-color: #ECEBE8;
@@ -25,12 +25,12 @@
   background-repeat: no-repeat;
   background-position: center left 52%;
   background-size: 15px auto;
-  transition: width .3s;
+  transition: width .3s; */
 }
 
-.video__playback-button:hover {
+/* .video__playback-button:hover {
   width: 70px;
-}
+} */
 
 .video__iframe {
   width: 100%;
