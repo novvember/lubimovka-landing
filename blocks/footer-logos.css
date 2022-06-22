@@ -1,118 +1,87 @@
 .footer-logos__link {
-  font-family: "Formular", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-logos__image {
+  display: block;
+}
+
+.footer-logos__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
   text-align: center;
-  width: 182.5px;
-  height: 118.5px;
 }
 
 .footer-logos_name_fond {
-  background-image: url("../images/footer-logo-fond.png");
-  background-repeat: no-repeat;
-  background-position: center 28px;
-  background-size: 111px 41px;
-
-}
-
-.footer-logos_name_fond::after {
-  display: block;
-  content: 'Генеральный партнер';
-  font-size: 14px;
-  line-height: 20px;
-  padding-top: 10px;
-  margin-top: 50%;
-  transform: translateY(-50%);
+  width: 110px;
+  height: 40px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .footer-logos_name_mosbrew {
-  background-image: url("../images/footer-logo-mosbrew.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 106px 37px;
+  width: 106px;
+  height: 37px;
 }
 
 .footer-logos_name_sbtg {
-  background-image: url("../images/footer-logo-sbtg.png");
-  background-repeat: no-repeat;
-  background-position: center 28px;
-  background-size: 97px 44px;
-}
-
-.footer-logos_name_sbtg::after {
-  display: block;
-  content: 'Онлайн-трансляции';
-  font-size: 14px;
-  line-height: 20px;
-  padding-top: 10px;
-  margin-top: 50%;
-  transform: translateY(-50%);
+  width: 90px;
+  height: 44px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .footer-logos_name_talk {
-  background-image: url("../images/footer-logo-talk.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 118px 43px;
+  width: 118px;
+  height: 43px;
 }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 375px) {
 
-  .footer-logos__link {
-    width: 100%;
+  .footer-logos__subtitle {
+    font-size: 13px;
+    line-height: 18px;
   }
 
   .footer-logos_name_fond {
-    background-position: center 24px;
+    margin-top: 14px;
+    margin-bottom: 14px;
   }
 
-  .footer-logos_name_fond::after {
-    font-size: 12px;
-    line-height: 18px;
-    margin-top: 55%;
-    transform: translateY(-50%);
-  }
-
-  .footer-logos_name_sbtg::after {
-    font-size: 12px;
-    line-height: 18px;
+  .footer-logos_name_sbtg {
+    margin-top: 14px;
+    margin-bottom: 14px;
   }
 
 }
 
 @media screen and (min-width: 1024px) {
 
-  .footer-logos_name_fond {
-    background-size: 91px 34px;
-    background-position: center;
-    width: 91px;
-    height: 34px;
-    margin-right: 31px;
-  }
-
-  .footer-logos_name_fond::after,
-  .footer-logos_name_sbtg::after {
+  .footer-logos__subtitle {
     display: none;
   }
 
+  .footer-logos_name_fond {
+    width: 91px;
+    height: 34px;
+  }
+
   .footer-logos_name_mosbrew {
-    background-size: 88px 31px;
     width: 88px;
     height: 31px;
-    margin-right: 32px;
   }
 
   .footer-logos_name_sbtg {
-    background-size: 68px 37px;
-    background-position: center;
     width: 68px;
-    height: 31px;
-    margin-right: 26px;
+    height: 37px;
   }
 
   .footer-logos_name_talk {
-    background-size: 97px 36px;
     width: 97px;
-    height: 31px;
-    margin-right: 30px;
+    height: 36px;
   }
 
 }

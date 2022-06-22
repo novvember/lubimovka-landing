@@ -1,91 +1,67 @@
 .footer-grid {
   display: grid;
+  gap: 10px;
+  grid-template-areas:  "logo logo"
+                        "address address"
+                        "nav nav"
+                        "nav nav"
+                        "partners partners"
+                        "copyright copyright"
+                        "credits credits";
 }
 
 .footer-grid__logo {
-  grid-column: 1 / span 2;
-  grid-row: 1 / 2;
+  grid-area: logo;
 }
 
 .footer-grid__address {
-  grid-column: 1 / span 2;
-  grid-row: 2 / 3;
+  grid-area: address;
+}
+
+.footer-grid__nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-areas:  "menu-lubimovka menu-about"
+                        "menu-projects menu-projects";
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid
 }
 
 .footer-grid__menu-lubimovka {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  grid-area: menu-lubimovka;
 }
 
 .footer-grid__menu-about {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-area: menu-about;
 }
 
 .footer-grid__menu-projects {
-  grid-column: 1 / span 2;
-  grid-row: 4 / 5;
+  grid-area: menu-projects;
 }
 
 .footer-grid__partners {
-  grid-column: 1 / span 2;
-  grid-row: 5 / 6;
+  grid-area: partners;
 }
 
 .footer-grid__copyright {
-  grid-column: 1 / span 2;
-  grid-row: 6 / 7;
+  grid-area: copyright;
 }
 
 .footer-grid__credits {
-  grid-column: 1 / span 2;
-  grid-row: 7 / 8;
+  grid-area: credits;
 }
 
 @media screen and (min-width: 1024px) {
 
   .footer-grid {
-    grid-template-columns: 153px fit-content(40%) minmax(155px, 180px) minmax(155px, 175px) minmax(210px, 300px);
+    grid-template-columns: 150px minmax(1fr, 2fr) minmax(155px, 170px) minmax(155px, 165px) minmax(210px, 290px);
+    grid-template-areas:  "logo partners partners partners partners"
+                          "logo address nav nav nav"
+                          "logo copyright copyright credits credits"
   }
 
-  .footer-grid__logo {
-    grid-column: 1 / 2;
-    grid-row: 1 / span 3;
-  }
-
-  .footer-grid__partners {
-    grid-column: 2 / span 4;
-    grid-row: 1 / 2;
-  }
-
-  .footer-grid__address {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-
-  .footer-grid__menu-lubimovka {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-  }
-
-  .footer-grid__menu-about {
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-  }
-
-  .footer-grid__menu-projects {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-  }
-
-  .footer-grid__copyright {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-  }
-
-  .footer-grid__credits {
-    grid-column: 3 / span 3;
-    grid-row: 3 / 4;
+  .footer-grid__nav {
+    grid-template-areas:  "menu-lubimovka menu-about menu-projects";
   }
 
 }
@@ -93,17 +69,7 @@
 @media screen and (min-width: 1440px) {
 
   .footer-grid {
-    grid-template-columns: 210px 570px 180px 175px 300px;
-  }
-
-  .footer-grid__copyright {
-    grid-column: 2 / span 2;
-    grid-row: 3 / 4;
-  }
-
-  .footer-grid__credits {
-    grid-column: 4 / span 2;
-    grid-row: 3 / 4;
+    grid-template-columns: 200px 560px 175px 175px 285px;
   }
 
 }

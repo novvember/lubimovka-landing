@@ -1,10 +1,9 @@
 .footer {
   font-family: "Formular", sans-serif;
+  padding: 50px 0;
 }
 
 .footer__logo {
-  margin: 0;
-  padding: 0;
   width: 93px;
   height: 80px;
 }

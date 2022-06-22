@@ -1,29 +1,34 @@
 .footer-blocks__logo {
-  padding: 56px 58px 14px;
+  padding: 56px 58px 11px;
 }
 
 .footer-blocks__address {
-  padding: 14px 55px 28px;
+  padding: 11px 55px 23px;
+}
+
+.footer-blocks__nav {
+  margin: 0;
+  padding: 23px 0;
 }
 
 .footer-blocks__list-lubimovka {
   margin: 0;
-  padding: 28px 12px 26px 55px;
+  padding: 0 12px 26px 55px;
 }
 
 .footer-blocks__list-about {
   margin: 0;
-  padding: 28px 55px 26px 12px;
+  padding: 0 55px 26px 12px;
 }
 
 .footer-blocks__list-projects {
   margin: 0;
-  padding: 26px 55px 28px;
+  padding: 26px 55px 0;
 }
 
 .footer-blocks__partners {
   display: flex;
-  padding: 28px 24px 80px;
+  padding: 23px 24px 80px;
   border-bottom: 1px solid #242424;
 }
 
@@ -32,46 +37,46 @@
 }
 
 .footer-blocks__copyright {
-  padding: 32px 27px 29px;
+  padding: 22px 27px 29px;
 }
 
 .footer-blocks__credits {
-  padding: 30px 27px 74px;
+  padding: 20px 27px 24px;
 }
 
 @media screen and (max-width: 413px) {
 
   .footer-blocks__logo {
-    padding: 56px 25px 14px;
+    padding: 56px 25px 11px;
   }
 
   .footer-blocks__address {
-    padding: 14px 25px 28px;
+    padding: 11px 25px 23px;
+  }
+
+  .footer-blocks__nav {
+    padding: 23px 0;
   }
 
   .footer-blocks__list-lubimovka {
-    padding: 28px 15px 26px 25px;
+    padding: 0 15px 26px 25px;
   }
 
   .footer-blocks__list-about {
-    padding: 28px 25px 26px 15px;
+    padding: 0 25px 26px 15px;
   }
 
   .footer-blocks__list-projects {
-    padding: 26px 25px 28px;
+    padding: 26px 25px 0;
   }
 
   .footer-blocks__partners {
-    padding: 28px 15px 80px;
+    padding: 23px 15px 80px;
   }
 
 }
 
 @media screen and (min-width: 1024px) {
-
-  .footer-blocks > * {
-    /*border: 1px solid;*/
-  }
 
   .footer-blocks__logo {
     padding: 36px 25px 14px;
@@ -90,19 +95,20 @@
     padding: 31px 0 49px 25px;
   }
 
+  .footer-blocks__nav {
+    padding: 31px 0 49px 45px;
+  }
+
   .footer-blocks__list-lubimovka {
-    margin: 0;
-    padding: 31px 0 49px;
+    padding: 0;
   }
 
   .footer-blocks__list-about {
-    margin: 0;
-    padding: 31px 0 49px;
+    padding: 0;
   }
 
   .footer-blocks__list-projects {
-    margin: 0;
-    padding: 31px 0 49px;
+    padding: 0;
   }
 
   .footer-blocks__copyright {
@@ -120,11 +126,11 @@
 @media screen and (min-width: 1440px) {
 
   .footer-blocks__logo {
-    padding: 42px 82px 22px 32px;
+    padding: 42px 72px 22px 32px;
   }
 
   .footer-blocks__partners {
-    padding: 48px 0 31px;
+    padding: 48px 0 26px;
   }
 
   .footer-blocks__partners-title {
@@ -132,19 +138,11 @@
   }
 
   .footer-blocks__address {
-    padding: 31px 0 49px;
+    padding: 18px 0 40px;
   }
 
-  .footer-blocks__list-lubimovka {
-    padding: 31px 0 49px;
-  }
-
-  .footer-blocks__list-about {
-    padding: 31px 0 49px;
-  }
-
-  .footer-blocks__list-projects {
-    padding: 31px 0 49px;
+  .footer-blocks__nav {
+    padding: 18px 0 40px;
   }
 
 }
