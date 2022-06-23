@@ -1,0 +1,334 @@
+.header {
+  padding: 32px 19px 54px 24px;
+  display: inline-block;
+  background-color: #ecebe8;
+}
+
+@media (min-width: 850px) {
+  .header {
+    padding: 0;
+    padding-top: 11px;
+    padding-left: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 19px;
+
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+    border-bottom: 1px solid #242424;
+  }
+}
+
+/* Логотип */
+.header__logo {
+  display: inline-block;
+  width: 43px;
+  height: 34px;
+  object-fit: contain;
+}
+
+@media (min-width: 850px) {
+  .header__logo {
+    padding-top: 4px;
+    padding-bottom: 11px;
+  }
+}
+
+/* Меню со всеми ссылками шапки */
+.header__menu {
+  /* Скрытие меню */
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  /* Позиционирование поверх контента */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  overflow-y: scroll;
+  /* Фон */
+  background-color: #ecebe8;
+  /* Расположение элементов внутри */
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.header__menu_opened {
+  /* Открытие меню */
+  max-height: 100vh;
+}
+
+@media (min-width: 850px) {
+  .header__menu {
+    max-height: none;
+    position: relative;
+    flex-direction: row;
+    gap: 0;
+    overflow: visible;
+  }
+}
+
+/* Список ссылок на другие разделы сайта */
+.header__sections-list {
+  /* Сброс стилей */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Поля */
+  padding-inline: 39px;
+  margin-top: 46px;
+  /* Расположение элементов */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* Логотип сверху */
+  padding-top: 77px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 43px 34px;
+  background-position: left 54px top;
+}
+
+@media (min-width: 850px) {
+  .header__sections-list {
+    flex-direction: row;
+    background-image: none;
+    padding: 0;
+    padding-inline: 12px;
+    margin: 0;
+    gap: 0;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 850px) {
+  .header__sections-item_type_home-page {
+    display: none;
+  }
+}
+@media (min-width: 850px) {
+  .header__sections-item {
+    padding-top: 8px;
+    white-space: nowrap;
+  }
+}
+
+.header__section-link {
+  text-decoration: none;
+  font-family: "Neue Machina", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+@media (min-width: 850px) {
+  .header__section-link {
+    font-family: "Formular", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.38;
+  }
+}
+
+.header__section-link::before,
+.header__section-link::after {
+  content: "";
+  display: inline-block;
+  height: 1.46em;
+  width: 0.57em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.header__section-link::before {
+  background-image: url(../images/icon__menu-zctive-before.svg);
+}
+
+.header__section-link::after {
+  background-image: url(../images/icon__menu-zctive-after.svg);
+}
+
+.header__section-link:hover::before,
+.header__section-link:hover::after,
+.header__section-link_active::before,
+.header__section-link_active::after {
+  opacity: 1;
+}
+
+/* Список ссылок на дополнительные действия, типа пожертвований */
+.header__actions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+@media (min-width: 850px) {
+  .header__actions-list {
+    display: none;
+    order: 4;
+    padding: 0;
+    padding-inline: 12px;
+    gap: 0;
+    border-left: 1px solid #242424;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__actions-list {
+    display: flex;
+  }
+}
+
+.header__action-item {
+  outline: 1px solid #000;
+  text-transform: uppercase;
+}
+
+@media (min-width: 850px) {
+  .header__action-item {
+    outline: none;
+  }
+}
+
+/* Общий элемент для ссылок-кнопок в шапке */
+.header__extra-link {
+  display: block;
+  padding: 16px 54px 18px 16px;
+  font-family: "Formular", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #242424;
+  text-decoration: none;
+  background-image: url(../images/icon__arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right 15px center;
+  transition: color 0.3s, background-color 0.3s, background-image 0.3s;
+}
+
+@media (min-width: 850px) {
+  .header__extra-link {
+    padding: 8px;
+    background-image: none;
+  }
+}
+
+@media (min-width: 850px) {
+  .header__actions-list .header__extra-link {
+    padding-left: 25px;
+    background-image: url(../images/icon__plus.svg);
+    background-position: left;
+  }
+}
+
+.header__extra-link:hover {
+  color: #fff;
+  background-image: url(../images/icon__arrow-right_white.svg);
+}
+
+@media (min-width: 850px) {
+  .header__extra-link:hover {
+    background-image: none;
+  }
+}
+
+@media (min-width: 850px) {
+  .header__actions-list .header__extra-link:hover {
+    background-image: url(../images/icon__plus_white.svg);
+  }
+}
+
+/* Список ссылок на социальные сети */
+.header__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+@media (min-width: 850px) {
+  .header__social-list {
+    display: none;
+    padding-inline: 12px;
+    gap: 0;
+    flex-wrap: nowrap;
+    border-left: 1px solid #242424;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header__social-list {
+    display: flex;
+  }
+}
+
+.header__social-item {
+  width: calc(50% - 0.5px);
+  outline: 1px solid #000;
+}
+
+@media (min-width: 850px) {
+  .header__social-item {
+    width: fit-content;
+    outline: none;
+  }
+}
+
+/* Кнопка-бургер для открытия меню */
+.header__menu-button {
+  position: fixed;
+  bottom: 128px;
+  right: 0;
+  z-index: 3;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-color: #242424;
+  border: 0;
+  cursor: pointer;
+  background-image: url(../images/icon__menu-open.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 12px;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.header__menu-button:hover {
+  opacity: 0.9;
+}
+
+.header__menu-button:active {
+  transform: scale(1.05);
+}
+
+.header__menu-button_type_close {
+  background-image: url(../images/icon__menu-close.svg);
+  background-size: 18px 18px;
+}
+
+@media (min-width: 850px) {
+  .header__menu-button {
+    display: none;
+  }
+}

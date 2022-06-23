@@ -1,0 +1,52 @@
+.share {
+  padding: 25px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .share {
+    padding-top: 40px;
+    padding-bottom: 139px;
+    padding-inline: 0;
+  }
+}
+
+.share__title {
+  margin: 0;
+  font-family: "Neue Machina", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+@media (min-width: 768px) {
+  .share__title {
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .share__title {
+    margin: 0 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .share__title {
+    margin: 0 362px;
+  }
+}
+
+.share__buttons {
+  display: inline-flex;
+  gap: 8px;
+}
+
+@media (min-width: 486px) {
+  .share__buttons {
+    vertical-align: 80%;
+  }
+}
