@@ -12,6 +12,7 @@
   background-color: transparent;
   border: none;
   transition: color var(--duration);
+  text-decoration: none;
 }
 
 .button::before {
