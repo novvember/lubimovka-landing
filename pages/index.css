@@ -34,3 +34,11 @@
 @import url(../blocks/bottom-photo.css);
 
 @import url(../blocks/share.css);
+
+@import url("../blocks/footer.css");
+@import url("../blocks/footer-grid.css");
+@import url("../blocks/footer-blocks.css");
+@import url("../blocks/footer-links-list.css");
+@import url("../blocks/footer-address.css");
+@import url("../blocks/footer-logos.css");
+@import url("../blocks/footer-logos-list.css");
