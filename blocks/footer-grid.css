@@ -1,0 +1,75 @@
+.footer-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:  "logo logo"
+                        "address address"
+                        "nav nav"
+                        "nav nav"
+                        "partners partners"
+                        "copyright copyright"
+                        "credits credits";
+}
+
+.footer-grid__logo {
+  grid-area: logo;
+}
+
+.footer-grid__address {
+  grid-area: address;
+}
+
+.footer-grid__nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-areas:  "menu-lubimovka menu-about"
+                        "menu-projects menu-projects";
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid
+}
+
+.footer-grid__menu-lubimovka {
+  grid-area: menu-lubimovka;
+}
+
+.footer-grid__menu-about {
+  grid-area: menu-about;
+}
+
+.footer-grid__menu-projects {
+  grid-area: menu-projects;
+}
+
+.footer-grid__partners {
+  grid-area: partners;
+}
+
+.footer-grid__copyright {
+  grid-area: copyright;
+}
+
+.footer-grid__credits {
+  grid-area: credits;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .footer-grid {
+    grid-template-columns: 150px minmax(1fr, 2fr) minmax(155px, 170px) minmax(155px, 165px) minmax(210px, 290px);
+    grid-template-areas:  "logo partners partners partners partners"
+                          "logo address nav nav nav"
+                          "logo copyright copyright credits credits"
+  }
+
+  .footer-grid__nav {
+    grid-template-areas:  "menu-lubimovka menu-about menu-projects";
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .footer-grid {
+    grid-template-columns: 200px 560px 175px 175px 285px;
+  }
+
+}

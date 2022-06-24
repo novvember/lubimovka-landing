@@ -1,0 +1,73 @@
+.critics {
+  padding: 50px 0;
+}
+
+/* Заголовок блока */
+.critics__title {
+  font-family: "Neue Machina", sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #242424;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .critics__title {
+    font-size: 40px;
+    line-height: 1;
+  }
+}
+
+/* Карточка */
+.critics__article {
+  padding: 77px 24px 72px;
+  background-color: #fff;
+  transition: opacity 0.3s;
+}
+
+@media (min-width: 768px) {
+  .critics__article {
+    padding: 55px 24px 72px;
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: 1280px) {
+  .critics__article {
+    padding-inline: 88px;
+  }
+}
+
+.critics__article_active {
+  opacity: 1;
+}
+
+/* Логотип издания */
+.critics__logo {
+  display: block;
+  height: 40px;
+  object-fit: contain;
+  object-position: left center;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .critics__logo {
+    margin-bottom: 47px;
+  }
+}
+
+/* Текст карточки */
+.critics__text {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: "Formular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: #242424;
+}

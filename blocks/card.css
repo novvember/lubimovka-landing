@@ -1,0 +1,62 @@
+.card {
+  font-family: "Neue Machina", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+.card__title {
+  font-weight: inherit;
+  font-size: 28px;
+  line-height: 1.14;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.card__card {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.card__play {
+  display: flex;
+  flex-direction: column;
+  background-color: #b7c09d;
+}
+
+.card__play-name {
+  font-weight: inherit;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 16px;
+  padding-bottom: 140px;
+}
+
+.card__author {
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card__text {
+  margin: 0;
+  font-family: "Formular", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #242424;
+}
+
+@media (min-width: 768px) {
+  .card__title {
+    display: none;
+  }
+
+  .card__card {
+    margin: 0;
+  }
+}

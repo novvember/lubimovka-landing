@@ -1,0 +1,101 @@
+.slider-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  transition: background-image 0.3s, opacity 0.3s;
+}
+
+.slider-button:hover {
+  transition-delay: 0.3s; /* Изменение вперед с задержкой */
+}
+
+.slider-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Иконки */
+.slider-button_type_prev {
+  background-position: center, left;
+  background-image: url(../images/icon__arrow-left.svg),
+    url(../images/icon__arc-left.svg);
+}
+
+.slider-button_type_prev:hover {
+  background-image: url(../images/icon__arrow-left_white.svg),
+    url(../images/icon__arc-left.svg);
+}
+
+.slider-button_type_next {
+  background-position: center, right;
+  background-image: url(../images/icon__arrow-right.svg),
+    url(../images/icon__arc-right.svg);
+}
+
+.slider-button_type_next:hover {
+  background-image: url(../images/icon__arrow-right_white.svg),
+    url(../images/icon__arc-right.svg);
+}
+
+/* Псевдоэлементы с оформлением */
+.slider-button::after,
+.slider-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Темная подложка */
+.slider-button::after {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.slider-button:hover::after {
+  background-color: #242424;
+  transition-delay: 0.3s, 0s; /* Изменение вперед с задержкой */
+}
+
+.slider-button:active::after {
+  transform: scale(1.15);
+}
+
+/* Растущая граница */
+.slider-button::before {
+  background-repeat: no-repeat;
+  transition: transform 0.3s;
+  transition-delay: 0.2s; /* Оратное изменение с задеркой */
+}
+
+.slider-button_type_prev::before {
+  background-image: url(../images/icon__arc-left.svg);
+  background-position: left;
+}
+
+.slider-button_type_prev:hover::before {
+  transform: rotate(-180deg);
+  transition-delay: 0s; /* Изменение вперед без задержки */
+}
+
+.slider-button_type_next::before {
+  background-image: url(../images/icon__arc-right.svg);
+  background-position: right;
+}
+
+.slider-button_type_next:hover::before {
+  transform: rotate(180deg);
+  transition-delay: 0s; /* Изменение вперед без задержки */
+}

@@ -1,0 +1,148 @@
+.footer-blocks__logo {
+  padding: 56px 58px 11px;
+}
+
+.footer-blocks__address {
+  padding: 11px 55px 23px;
+}
+
+.footer-blocks__nav {
+  margin: 0;
+  padding: 23px 0;
+}
+
+.footer-blocks__list-lubimovka {
+  margin: 0;
+  padding: 0 12px 26px 55px;
+}
+
+.footer-blocks__list-about {
+  margin: 0;
+  padding: 0 55px 26px 12px;
+}
+
+.footer-blocks__list-projects {
+  margin: 0;
+  padding: 26px 55px 0;
+}
+
+.footer-blocks__partners {
+  display: flex;
+  padding: 23px 24px 80px;
+  border-bottom: 1px solid #242424;
+}
+
+.footer-blocks__partners-title {
+  display: none;
+}
+
+.footer-blocks__copyright {
+  padding: 22px 27px 29px;
+}
+
+.footer-blocks__credits {
+  padding: 20px 27px 24px;
+}
+
+@media screen and (max-width: 413px) {
+
+  .footer-blocks__logo {
+    padding: 56px 25px 11px;
+  }
+
+  .footer-blocks__address {
+    padding: 11px 25px 23px;
+  }
+
+  .footer-blocks__nav {
+    padding: 23px 0;
+  }
+
+  .footer-blocks__list-lubimovka {
+    padding: 0 15px 26px 25px;
+  }
+
+  .footer-blocks__list-about {
+    padding: 0 25px 26px 15px;
+  }
+
+  .footer-blocks__list-projects {
+    padding: 26px 25px 0;
+  }
+
+  .footer-blocks__partners {
+    padding: 23px 15px 80px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .footer-blocks__logo {
+    padding: 36px 25px 14px;
+  }
+
+  .footer-blocks__partners {
+    padding: 48px 0 31px 25px;
+    border-bottom: 0;
+  }
+
+  .footer-blocks__partners-title {
+    display: block;
+  }
+
+  .footer-blocks__address {
+    padding: 31px 0 49px 25px;
+  }
+
+  .footer-blocks__nav {
+    padding: 31px 0 49px 45px;
+  }
+
+  .footer-blocks__list-lubimovka {
+    padding: 0;
+  }
+
+  .footer-blocks__list-about {
+    padding: 0;
+  }
+
+  .footer-blocks__list-projects {
+    padding: 0;
+  }
+
+  .footer-blocks__copyright {
+    padding: 0 0 73px;
+    display: flex;
+  }
+
+  .footer-blocks__credits {
+    padding: 0 0 54px;
+    display: flex;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .footer-blocks__logo {
+    padding: 42px 72px 22px 32px;
+  }
+
+  .footer-blocks__partners {
+    padding: 48px 0 26px;
+  }
+
+  .footer-blocks__partners-title {
+    display: block;
+  }
+
+  .footer-blocks__address {
+    padding: 18px 0 40px;
+  }
+
+  .footer-blocks__nav {
+    padding: 18px 0 40px;
+  }
+
+}

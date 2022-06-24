@@ -1,0 +1,45 @@
+@import url(../vendor/normalize.css);
+
+@import url(../vendor/fonts/font-machina.css);
+@import url(../vendor/fonts/font-formular.css);
+
+/* Swiper */
+@import url(https://unpkg.com/swiper@8/swiper-bundle.min.css);
+
+@import url(../blocks/page.css);
+@import url(../blocks/content.css);
+
+@import url(../blocks/header.css);
+
+@import url(../blocks/back-button.css);
+
+@import url(../blocks/button.css);
+
+@import url(../blocks/play.css);
+@import url(../blocks/title.css);
+@import url(../blocks/play-photo.css);
+@import url(../blocks/play-summary.css);
+@import url(../blocks/credits.css);
+@import url(../blocks/video.css);
+@import url(../blocks/description.css);
+@import url(../blocks/card.css);
+
+@import url(../blocks/slider.css);
+@import url(../blocks/slider-button.css);
+@import url(../blocks/reviews.css);
+
+@import url(../blocks/photos.css);
+
+@import url(../blocks/critics.css);
+
+@import url(../blocks/bottom-photo.css);
+
+@import url(../blocks/share.css);
+
+@import url("../blocks/footer.css");
+@import url("../blocks/footer-grid.css");
+@import url("../blocks/footer-blocks.css");
+@import url("../blocks/footer-links-list.css");
+@import url("../blocks/footer-address.css");
+@import url("../blocks/footer-logos.css");
+@import url("../blocks/footer-logos-list.css");

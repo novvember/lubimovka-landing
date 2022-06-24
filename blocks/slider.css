@@ -1,0 +1,104 @@
+.slider {
+  overflow: hidden;
+}
+
+.slider__header {
+  z-index: 2;
+  position: relative;
+  padding-inline: 24px;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  column-gap: 25px;
+  row-gap: 50px;
+  grid-template-areas:
+    "title buttons"
+    "pagination pagination";
+}
+
+@media (min-width: 768px) {
+  .slider__header {
+    grid-template-columns: 1fr min-content min-content;
+    grid-template-areas: "title pagination buttons";
+    padding-inline: 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slider__header {
+    padding-inline: 362px;
+  }
+}
+
+.slider__title {
+  grid-area: title;
+}
+
+/* Кнопки */
+.slider__buttons {
+  display: flex;
+  gap: 20px;
+  grid-area: buttons;
+}
+
+/* Индикаторы страниц */
+.slider__pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  grid-area: pagination;
+  max-height: 50px;
+}
+
+.slider__pagination-bullet {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+
+.slider__pagination-bullet::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #242424;
+  transition: all 0.3s;
+}
+
+.slider__pagination-bullet:hover::before {
+  background-color: #242424;
+}
+
+.slider__pagination-bullet_active::before {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #242424;
+  background-color: #242424;
+}
+
+/* Слайды */
+.slider__slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -47px;
+}
+
+@media (min-width: 768px) {
+  .slider__slides {
+    margin-top: 36px;
+  }
+}
+
+.sliders__slide {
+  box-sizing: border-box;
+}

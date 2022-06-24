@@ -1,0 +1,36 @@
+.footer-logos-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 118px;
+}
+
+.footer-logos-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: multiply;
+}
+
+@media screen and (min-width: 426px) {
+
+  .footer-logos-list {
+    grid-template-columns: repeat(auto-fill, 180px);
+    grid-auto-flow: row;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .footer-logos-list {
+    grid-template-columns: repeat(4, 100px);
+    grid-auto-rows: 40px;
+    column-gap: 30px;
+  }
+
+}

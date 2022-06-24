@@ -1,0 +1,27 @@
+.footer-links-list {
+  list-style: none;
+}
+
+.footer-links-list__item {
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 13px;
+}
+
+.footer-links-list__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-links-list__link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .footer-links-list__item {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+
+}

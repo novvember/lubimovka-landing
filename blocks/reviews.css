@@ -1,0 +1,72 @@
+.reviews {
+  padding: 27px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+}
+
+/* Заголовок блока */
+.reviews__title {
+  font-family: "Neue Machina", sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #242424;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .reviews__title {
+    font-size: 40px;
+    line-height: 1;
+  }
+}
+
+/* Карточка */
+.reviews__article {
+  padding: 72px 25px 100px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  justify-content: space-between;
+  height: auto; /* Растянуть карточки по высоте самой высокой */
+}
+
+@media (min-width: 768px) {
+  .reviews__article {
+    padding: 33px 24px 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews__article {
+    padding-inline: 30px;
+  }
+}
+
+.reviews__text {
+  margin: 0;
+  font-family: "Formular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+.reviews__name {
+  margin: 0;
+  font-family: "Neue Machina", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #242424;
+}

@@ -1,0 +1,263 @@
+/* Общий блок кнопки -- дает анимацию фона и нажатие */
+.button {
+  /* Перменные блока */
+  --icon-size: 20px;
+  --border: 1px solid #242424;
+  --duration: 0.3s;
+  --bg-color: #242424;
+  --scale: 1.1;
+  /* Сброс параметров */
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  transition: color var(--duration);
+  text-decoration: none;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 0;
+  background-color: var(--bg-color);
+  transition: width var(--duration), transform var(--duration);
+  z-index: -1;
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+.button:active::before {
+  transform: translateY(-50%) scale(var(--scale));
+}
+
+.button:hover {
+  color: #fff;
+}
+
+/* Положение границ кнопки */
+.button_borders_br {
+  border-bottom: var(--border);
+  border-right: var(--border);
+}
+
+.button_borders_bl {
+  border-bottom: var(--border);
+  border-left: var(--border);
+}
+
+.button_borders_t {
+  border-top: var(--border);
+}
+
+.button_borders_full {
+  border: var(--border);
+}
+
+/* Выбор иконки */
+.button_icon_arrow-left::after {
+  background-image: url(../images/icon__arrow-left.svg);
+}
+
+.button_icon_arrow-left:hover::after {
+  background-image: url(../images/icon__arrow-left_white.svg);
+}
+
+.button_icon_arrow-right::after {
+  background-image: url(../images/icon__arrow-right.svg);
+}
+
+.button_icon_arrow-right:hover::after {
+  background-image: url(../images/icon__arrow-right_white.svg);
+}
+
+.button_icon_arrow-diagonal::after {
+  background-image: url(../images/icon_arrow-diagonal.svg);
+}
+
+.button_icon_arrow-diagonal:hover::after {
+  background-image: url(../images/icon_arrow-diagonal_white.svg);
+}
+
+.button_icon_arrow-down::after {
+  background-image: url(../images/icon__arrow-down.svg);
+}
+
+.button_icon_arrow-down:hover::after {
+  background-image: url(../images/icon__arrow-down_white.svg);
+}
+
+.button_icon_playback::after {
+  background-image: url(../images/icon__playback.svg);
+}
+
+.button_icon_playback:hover::after {
+  background-image: url(../images/icon__playback_white.svg);
+}
+
+/* Кнопка Small */
+.button_size_small {
+  /* Text */
+  font-family: "Formular", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 0.88;
+  color: #242424;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* Поля */
+  padding: 9px 10px;
+}
+
+.button_small-icon_right {
+  text-align: left;
+  padding-right: calc(var(--icon-size) + 9px);
+}
+
+.button_small-icon_left {
+  text-align: left;
+  padding-left: calc(var(--icon-size) + 9px);
+}
+
+.button_size_small::after {
+  content: "";
+  width: var(--icon-size);
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image var(--duration);
+}
+
+.button_small-icon_right::after {
+  right: 0;
+}
+
+.button_small-icon_left::after {
+  left: 0;
+}
+
+/* Кнопка Big */
+.button_size_big {
+  font-family: "Formular", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #242424;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* Поля */
+  padding: 19px;
+
+  min-width: 240px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.button_big-icon_right {
+  text-align: left;
+  padding-right: calc(var(--icon-size) + 16px * 2);
+}
+
+.button_size_big::after {
+  content: "";
+  width: var(--icon-size);
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image var(--duration);
+}
+
+.button_big-icon_right::after {
+  right: 16px;
+}
+
+/* Кнопка Social */
+.button_size_social {
+  font-family: "Formular", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 0.88;
+  color: #242424;
+  /* Поля */
+  padding: 4px 12px 7px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.button_social-icon_left {
+  text-align: left;
+  padding-left: calc(var(--icon-size) + 2px);
+}
+
+.button_size_social::after {
+  content: "";
+  width: var(--icon-size);
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image var(--duration);
+}
+
+.button_social-icon_left::after {
+  left: 0;
+}
+
+/* Кнопка Round */
+.button_size_round {
+  box-sizing: border-box;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: #ecebe8;
+}
+
+.button_size_round::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  transition: transform var(--duration);
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.button_size_round:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.button_size_round:active::before {
+  transform: translate(-50%, -50%) scale(var(--scale));
+}
+
+.button_size_round::after {
+  content: "";
+  width: var(--icon-size);
+  height: var(--icon-size);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image var(--duration);
+}

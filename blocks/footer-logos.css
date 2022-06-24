@@ -1,0 +1,87 @@
+.footer-logos__link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-logos__image {
+  display: block;
+}
+
+.footer-logos__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+}
+
+.footer-logos_name_fond {
+  width: 110px;
+  height: 40px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.footer-logos_name_mosbrew {
+  width: 106px;
+  height: 37px;
+}
+
+.footer-logos_name_sbtg {
+  width: 90px;
+  height: 44px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.footer-logos_name_talk {
+  width: 118px;
+  height: 43px;
+}
+
+@media screen and (max-width: 375px) {
+
+  .footer-logos__subtitle {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .footer-logos_name_fond {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  .footer-logos_name_sbtg {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .footer-logos__subtitle {
+    display: none;
+  }
+
+  .footer-logos_name_fond {
+    width: 91px;
+    height: 34px;
+  }
+
+  .footer-logos_name_mosbrew {
+    width: 88px;
+    height: 31px;
+  }
+
+  .footer-logos_name_sbtg {
+    width: 68px;
+    height: 37px;
+  }
+
+  .footer-logos_name_talk {
+    width: 97px;
+    height: 36px;
+  }
+
+}
